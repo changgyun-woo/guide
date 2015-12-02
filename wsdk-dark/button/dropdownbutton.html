@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://ide.webida.net/apps/ide/src/styles/origin/dojo.css">
+<link rel="stylesheet" href="https://ide.webida.net/apps/ide/src/styles/origin/dijit.css">
+<link rel="stylesheet" href="https://dev.wsdk.io/apps/ide/src/styles/theme/wsdk-dark/css/theme.css">
+</head>
+<body class="wsdk-dark">
+
+<div data-dojo-type="dijit/form/DropDownButton">
+    <span>DropDownButton</span>
+    <div data-dojo-type="dijit/TooltipDialog">
+        <label for="name">Name:</label> <input data-dojo-type="dijit/form/TextBox" id="name" name="name"><br>
+        <label for="hobby">Hobby:</label> <input data-dojo-type="dijit/form/TextBox" id="hobby" name="hobby"><br>
+        <button data-dojo-type="dijit/form/Button" type="submit">Save</button>
+    </div>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/dojo/1.9.7/dojo/dojo.js" data-dojo-config="parseOnLoad: true, async:true"></script>
+<script type="text/javascript">
+    require(["dojo/parser", "dijit/form/DropDownButton", "dijit/form/TextBox", "dijit/TooltipDialog", "dijit/form/Button"]);
+</script>
+</body>
+</html>
