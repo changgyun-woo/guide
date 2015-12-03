@@ -6,6 +6,7 @@
 /*button*/
 /*Gutter*/
 /*footer*/
+/*progress*/
 .menubar-gradient {
   background-image: linear-gradient(to bottom, #363B42 1px, #414850 0px, #414850 26px, #3E454C 0px, #313437 30px);
 }
@@ -3342,22 +3343,22 @@ Splitters and gutters:
 }
 .webida-light .dijitProgressBarEmpty {
   /* outer container and background of the bar that's not finished yet*/
-  background-color: #fff;
-  border-color: #759dc0;
+  /*background-color: @progressbar-empty-background-color;
+  border-color: @progressbar-border-color;*/
+  background-color: #6b829f;
+  border: 1px #526985 solid;
 }
 .webida-light .dijitProgressBarTile {
   /* inner container for finished portion when in 'tile' (image) mode */
-  background-color: #abd6ff;
-  background-image: url("../images/progressBarFull.png");
   background-repeat: repeat-x;
-  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.93) 0px, rgba(255, 255, 255, 0.41) 1px, rgba(255, 255, 255, 0.7) 2px, rgba(255, 255, 255, 0) 100%);
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.93) 0px, rgba(255, 255, 255, 0.41) 1px, rgba(255, 255, 255, 0.7) 2px, rgba(255, 255, 255, 0) 100%);
-  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.93) 0px, rgba(255, 255, 255, 0.41) 1px, rgba(255, 255, 255, 0.7) 2px, rgba(255, 255, 255, 0) 100%);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.93) 0px, rgba(255, 255, 255, 0.41) 1px, rgba(255, 255, 255, 0.7) 2px, rgba(255, 255, 255, 0) 100%);
   background-attachment: scroll;
-}
-.webida-light .dj_ie6 .dijitProgressBarTile {
-  background-image: none;
+  background-image: -webkit-linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%), -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), -webkit-linear-gradient(left, #5abbff, #5abbff);
+  border-radius: 2px;
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+  background-color: transparent;
+  border-radius: 0;
+  -webkit-animation: progressmove 5s linear infinite;
+  animation: progressmove 5s linear infinite;
 }
 .webida-light .dijitProgressBarFull {
   border: 0px solid #759dc0;
@@ -3368,15 +3369,28 @@ Splitters and gutters:
   -webkit-transition-duration: 0.25s;
   -moz-transition-duration: 0.25s;
   transition-duration: 0.25s;
+  height: 20px;
 }
 .webida-light .dijitProgressBarLabel {
   /* Set to a color that contrasts with both the "Empty" and "Full" parts. */
-  color: #000;
+  color: #fff;
+  line-height: 20px;
 }
 .webida-light .dijitProgressBarIndeterminate .dijitProgressBarTile {
   /* use an animated gif for the progress bar in 'indeterminate' mode;
       background-color won't appear unless user has turned off background images */
   background: #efefef url("../images/progressBarAnim.gif") repeat-x top;
+}
+.webida-light .dj_ie6 .dijitProgressBarTile {
+  background-image: none;
+}
+@-webkit-keyframes progressmove {
+  0% {
+    background-position: 0px 0px, 0 0, 0 0;
+  }
+  100% {
+    background-position: -100px 0px, 0 0, 0 0;
+  }
 }
 .webida-light .dijitTimePicker .dijitButtonNode {
   padding: 0 0;
