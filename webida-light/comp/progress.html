@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../styles/origin/dojo.css">
+<link rel="stylesheet" href="../styles/origin/dijit.css">
+<link rel="stylesheet" href="../styles/theme/webida-light/css/theme.css">
+
+<style>
+    .wsdk-dark .dijitProgressBarEmpty {
+        background-color: #6b829f;
+        border: 1px #526985 solid;
+    }
+    .wsdk-dark .dijitProgressBarFull {
+        height: 20px;
+    }
+    .wsdk-dark .dijitProgressBarLabel {
+        color: #fff;
+        line-height: 20px;;
+    }
+    .wsdk-dark .dijitProgressBarTile {
+        background-image:
+        -webkit-linear-gradient(-45deg,
+        transparent 33%, rgba(0, 0, 0, .1) 33%,
+        rgba(0,0, 0, .1) 66%, transparent 66%),
+        -webkit-linear-gradient(top,
+        rgba(255, 255, 255, .25),
+        rgba(0, 0, 0, .25)),
+        -webkit-linear-gradient(left, #5abbff, #5abbff);
+        border-radius: 2px;
+        background-size: 35px 20px, 100% 100%, 100% 100%;
+        background-color: transparent;
+        border-radius: 0;
+        -webkit-animation: move 5s linear infinite;
+        animation: move 5s linear infinite;
+    }
+    @-webkit-keyframes move {
+        0% {background-position: 0px 0px, 0 0, 0 0}
+        100% {background-position: -100px 0px, 0 0, 0 0}
+    }
+
+</style>
+
+</head>
+<body class="wsdk-dark">
+
+<div data-dojo-type="dijit/ProgressBar"
+     data-dojo-id="myProgressBar" id="downloadProgress" data-dojo-props="maximum:10"></div>
+
+<input type="button" value="Go!" onclick="download();" />
+
+<script src="http://ajax.googleapis.com/ajax/libs/dojo/1.9.7/dojo/dojo.js" data-dojo-config="parseOnLoad: true, async:true"></script>
+<script type="text/javascript">
+    require(["dojo/parser", "dijit/ProgressBar"], function(){
+        var i = 0;
+        download = function(){
+            myProgressBar.set({value: ++i});
+            if(i < 10){
+                setTimeout(download, 100 + Math.floor(Math.random() * 1000));
+            }
+        }
+    });
+</script>
+</body>
+</html>
