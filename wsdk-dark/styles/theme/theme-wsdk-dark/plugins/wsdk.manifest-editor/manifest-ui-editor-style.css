@@ -1017,7 +1017,7 @@
 }
 
 .wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-row .entry-point-button .dijitButtonNode {
-    padding: 1px 4px 1px 4px;
+    padding: 0px 4px 0px 4px;
 }
 .wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-both .ui-content-row label {
     width:100px;
@@ -1073,7 +1073,7 @@
     color: #636b77;
 }
 .wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-row label ~ .dijitTextBox .dijitInputField > input {
-    color: #7b8390;
+    color: RGB(168,177,185);
 }
 .wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-row label ~ .dijitTextBox.dijitTextBoxFocused {
     background: #000;

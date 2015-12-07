@@ -1106,6 +1106,20 @@ There are three areas of styling for the Menu:
   width: 22px;
   height: 22px;
 }
+.wsdk-dark .icons20 {
+  background-image: url('../images/icons/wsdk_common_icon_20.png');
+  width: 20px;
+  height: 20px;
+}
+.wsdk-dark .icons20.filefolder {
+  background-position: 0 0;
+}
+.wsdk-dark .icons20.arrpane {
+  background-position: -20px -20px;
+}
+.wsdk-dark .dijitChecked .icons20.arrpane {
+  background-position: -20px 0px;
+}
 .wsdk-dark .dijitIconSave,
 .wsdk-dark .dijitIconPrint,
 .wsdk-dark .dijitIconCut,
@@ -2662,11 +2676,11 @@ There are three areas of styling for the Menu:
 }
 .wsdk-dark .dijitTabContainerTabListNested .dijitTab:first-child {
   padding: 3px 10px;
-  background-color: #424750;
+  background-color: #2e3137;
 }
 .wsdk-dark .dijitTabContainerTabListNested .dijitTab:first-child.dijitTabChecked {
   padding: 3px 10px;
-  background-color: #4f555b;
+  background-color: #4f5561;
 }
 .wsdk-dark .dijitTabContainerTabListNested .dijitTab:last-child {
   padding: 3px 10px;
@@ -6402,5 +6416,29 @@ There are three areas of styling for the Menu:
   margin-top: 1px;
   margin-left: 17px;
   background-color: #0096ff;
+}
+.wsdk-dark .toggle_text {
+  height: 20px;
+}
+.wsdk-dark .toggle_text .dijitCheckBoxIcon {
+  border-radius: 50%;
+  background-color: transparent;
+  width: 16px;
+  height: 16px;
+  margin-top: 1px;
+  margin-left: 1px;
+}
+.wsdk-dark .toggle_text .dijitButtonNode {
+  padding: 0!important;
+  border-radius: 0!important;
+  box-shadow: none!important;
+  background-color: transparent!important;
+  width: 14px;
+  height: 24px;
+}
+.wsdk-dark .toggle_text .dijitButtonText {
+  overflow: hidden;
+  color: #98a2b4;
+  font-size: 12px;
 }
 /*plugin*/
