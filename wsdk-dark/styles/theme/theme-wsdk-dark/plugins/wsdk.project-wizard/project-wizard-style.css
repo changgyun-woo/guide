@@ -1,0 +1,410 @@
+.wsdk-dark .wsdk-project-wizard {
+    width: 500px;
+    height: 450px;
+}
+.wsdk-dark .wsdk-project-wizard .dijitGutterH {
+    height: 0;
+}
+
+.wsdk-dark .wsdk-project-description-title {
+    font-weight: bold;
+}
+.wsdk-dark .wsdk-project-description-contents {
+    padding-top: 4px;
+}
+.wsdk-dark .wsdk-project-name {
+    border-top: 1px #7e8897 solid;
+    border-left: 1px #7e8897 solid;
+    border-right: 1px #7e8897 solid;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #fff;
+}
+.wsdk-dark .wsdk-project-name label {
+    font-weight: bold;
+}
+.wsdk-dark .wsdk-project-wizard .project-name-input {
+    width: 390px;
+    border: 1px #7e8897 solid;
+    background-color: #e6e9ed;
+}
+
+
+.wsdk-dark .wsdk-project-wizard .dijitBorderContainer-child {
+    padding: 0!important;
+}
+
+.wsdk-dark .wsdk-dark .wsdk-project-wizard label {
+    font-weight: bold;
+    padding-left: 10px;
+    padding-top: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.wsdk-dark .wsdk-project-wizard .wsdk-project-version label {
+    font-weight: normal;
+    padding-left: 0px;
+    padding-top: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.wsdk-dark .dijitGutterH {
+    border-bottom: 0;
+}
+
+.wsdk-dark .wsdk-project-platform-box {
+    box-sizing: border-box;
+}
+
+.wsdk-dark .wsdk-project-platform-box ~ .dijitGutterH {
+    border-bottom: 6px solid transparent;
+    padding: 0!important;
+    height: 2px;
+}
+.wsdk-dark .wsdk-project-platform-box ~ .dijitGutterH ~ .dijitBorderContainer-child {
+    border: 1px #A1B2C1 solid;
+    overflow-y: hidden;
+}
+.wsdk-dark .wsdk-project-wizard .wsdk-project-profile {
+    width: 60%;
+    float: left;
+    background-color: rgba(224,232,239,1);
+    box-sizing: border-box;
+    min-height: 74px;
+    position: relative;
+}
+.wsdk-dark .wsdk-project-wizard .wsdk-project-version {
+    width: 40%;
+    float: left;
+    background-color: rgba(224,232,239,1);
+    box-sizing: border-box;
+    min-height: 74px;
+    position: relative;
+}
+
+.wsdk-dark .wsdk-project-wizard .wsdk-project-profile {
+    border-left: 1px #A1B2C1 solid;
+    border-right: 1px #fff solid;
+    border-bottom: 1px #A1B2C1 solid;
+    padding: 10px 0 0 71px;
+    box-sizing: border-box;
+}
+
+.wsdk-dark .wsdk-project-wizard .wsdk-project-version {
+    padding: 30px 0 0 10px;
+    border-right: 1px #A1B2C1 solid;
+    border-bottom: 1px #A1B2C1 solid;
+    box-sizing: border-box;
+}
+
+.wsdk-dark .wsdk-project-wizard .wsdk-project-profile legend,
+.wsdk-dark .wsdk-project-wizard .wsdk-project-version legend{
+    font-weight: bold;
+    position: absolute;
+    top:10px;
+    left:10px;
+}
+
+.wsdk-dark .wsdk-project-wizard .application-search {
+    padding: 4px 6px;
+    background-color: rgba(194,204,211,1);
+}
+
+.wsdk-dark .wsdk-project-wizard .application-search .dijitButtonText{
+    font-weight: bold;
+}
+
+.wsdk-dark .wsdk-project-wizard .application-search .search-input {
+    float: right;
+    margin: 3px 0 0 0;
+    position: relative;
+}
+
+.wsdk-dark .wsdk-project-wizard .application-search .search-input:after {
+    background-image: url("resource/wsdk-project-wizard-platform-icon.png");
+    background-position: -198px 50%;
+    content: '';
+    position: absolute;
+    top:-1px;
+    right: 0;
+    width: 20px;
+    height: 20px;
+}
+
+.wsdk-dark .wsdk-project-wizard .application-gallery-container {
+    height: 250px;
+}
+
+
+.wsdk-dark .wsdk-project-wizard .application-gallery-container .application-gallery-combobox ~ .dijitGutter{
+    display: none;
+}
+
+.wsdk-dark .wsdk-project-wizard .application-gallery-container .application-gallery-combobox .dijitTextBox {
+    margin: 4px;
+    width: 100px;
+}
+
+.wsdk-dark .wsdk-project-wizard .application-gallery-container .application-gallery-combobox {
+    height: 28px;
+    background-color: rgba(212,219,226,1) !important;
+}
+
+.wsdk-dark .wsdk-project-wizard .application-gallery-pane .application-gallery {
+    width: 100%;
+    background-color: rgba(224, 232, 239,1) !important;
+}
+
+.wsdk-dark .wsdk-project-wizard .application-gallery-pane .application-gallery ~ .dijitSplitter{
+    background-color: rgba(224, 232, 239,1);
+}
+
+.wsdk-dark .wsdk-project-wizard .application-gallery-pane .application-gallery .gallery-item {
+    width: 70px;
+    height: 109px;
+    text-align: center;
+    padding: 10px 0 6px 0;
+    vertical-align: top;
+    display: inline-block;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 1px transparent solid;
+}
+
+.wsdk-dark .wsdk-project-wizard .application-gallery-pane .application-gallery .gallery-item label{
+    font-weight: normal;
+    padding: 3px 0 0 0;
+    width: 70px;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    word-wrap:normal;
+    overflow: hidden;
+    display: block;
+}
+
+.wsdk-dark .wsdk-project-wizard .application-gallery-pane .application-gallery .gallery-image {
+    width: 45px;
+    height: 76px;
+}
+
+.wsdk-dark .wsdk-project-wizard .application-gallery-pane .application-gallery .gallery-selected-item {
+    background-color: rgba(209,232,255,1);
+    border: rgba(100,180,219,1) 1px solid;
+    box-sizing: border-box;
+}
+
+.wsdk-dark .wsdk-project-wizard .application-gallery-pane .application-detail .left-bt,
+.wsdk-dark .wsdk-project-wizard .application-gallery-pane .application-detail .right-bt{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 63px;
+    width: 32px;
+    height: 32px;
+    background: url("resource/wsdk-project-wizard-platform-icon.png");
+}
+
+.wsdk-dark .wsdk-project-wizard .application-gallery-pane .application-detail .left-bt {
+    background-position: -257px 50%;
+}
+
+.wsdk-dark .wsdk-project-wizard .application-gallery-pane .application-detail .right-bt {
+    background-position: -225px 50%;
+}
+
+.wsdk-dark .wsdk-project-wizard .application-gallery-pane .application-detail .dijitButton .dijitButtonNode{
+    background: none;
+    padding: 0;
+    box-shadow: none;
+    width: 32px;
+    height: 32px;
+    border: none;
+}
+
+.wsdk-dark .wsdk-project-wizard .application-gallery-pane .application-detail .images{
+    display: inline-block;
+    padding: 0;
+}
+
+
+.wsdk-dark .wsdk-project-wizard .application-gallery-pane .application-detail {
+    width: 200px;
+    background-color: rgba(243,248,252,1)!important;
+}
+
+.wsdk-dark .wsdk-project-wizard .application-gallery-pane .dojoxToggleSplitter .dojoxToggleSplitterIcon {
+    background-image: url("resource/wsdk-project-wizard-platform-icon.png");
+    width: 8px;
+    left: -7px;
+}
+
+.wsdk-dark .wsdk-project-wizard .application-gallery-pane .dojoxToggleSplitter .dojoxToggleSplitterIconClosed {
+    background-position: -319px 50%!important;
+}
+
+.wsdk-dark .wsdk-project-wizard .application-gallery-pane .dojoxToggleSplitter .dojoxToggleSplitterIconOpen {
+    background-position: -286px 50%!important;
+}
+
+.wsdk-dark .wsdk-project-wizard .application-gallery-pane .dojoxToggleSplitter .dojoxToggleSplitterIconOpenHover {
+    background-position: -286px 50%!important;
+}
+
+.wsdk-dark .wsdk-project-wizard .application-gallery-pane .dojoxToggleSplitter .dojoxToggleSplitterIconClosedHover {
+    background-position: -319px 50%!important;
+}
+
+.wsdk-dark .wsdk-project-wizard .application-gallery-pane .application-detail .detail-image {
+    width: 90px;
+    display: none;
+}
+
+.wsdk-dark .wsdk-project-wizard .application-gallery-pane .application-detail .show {
+    display: block;
+    cursor: pointer;
+}
+
+.wsdk-dark .wsdk-project-wizard .dijitButton.selected .dijitButtonNode {
+    background-color: rgba(71,165,236,1);
+}
+
+.wsdk-dark .wsdk-project-wizard .dijitButton.dijitButtonDisabled .dijitButtonNode {
+    background-color: rgba(239,239,239,1);
+}
+
+.wsdk-dark .wsdk-project-wizard .dijitButton .dijitEditorIcon {
+    width: 32px;
+    height: 32px;
+    margin-top: 7px;
+}
+
+.wsdk-dark .wsdk-project-wizard .profile-bt.wearable .dijitEditorIcon {
+    background-position: -34px 50%;
+}
+.wsdk-dark .wsdk-project-wizard .profile-bt.wearable.selected .dijitEditorIcon {
+    background-position: 0 50%;
+}
+
+.wsdk-dark .wsdk-project-wizard .profile-bt.mobile .dijitEditorIcon {
+    background-position: -96px 50%;
+}
+.wsdk-dark .wsdk-project-wizard .profile-bt.mobile.selected .dijitEditorIcon {
+    background-position: -64px 50%;
+}
+
+.wsdk-dark .wsdk-project-wizard .profile-bt.tv .dijitEditorIcon {
+    background-position: -129px 50%;
+}
+.wsdk-dark .wsdk-project-wizard .profile-bt.tv.selected .dijitEditorIcon {
+    background-position: -161px 50%;
+}
+
+.wsdk-dark .wsdk-project-wizard .profile-bt .dijitEditorIcon {
+    background-image: url('resource/wsdk-project-wizard-platform-icon.png');
+}
+.wsdk-dark .wsdk-project-wizard .profile-bt .dijitButtonNode {
+    padding: 0!important;
+    width: 104px;
+    height: 44px;
+}
+.wsdk-dark .wsdk-project-wizard .profile-bt .dijitButtonText {
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-top: 7px;
+    color: rgba(39,42,45,1);
+}
+
+.wsdk-dark .wsdk-project-wizard-detail-image-popup {
+    width: 518px;
+    height: 538px;
+    position: absolute;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    margin-left: -259px;
+    margin-top: -286px;
+    display: none;
+}
+.wsdk-dark .wsdk-project-wizard-detail-image-popup .overlay {
+    width: 100%;
+    height: 100%;
+    border: 1px #000 solid;
+    border-radius: 6px;
+}
+.wsdk-dark .wsdk-project-wizard-detail-image-popup .overlay .pane {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+.wsdk-dark .wsdk-project-wizard-detail-image-popup .overlay .pane .left-button-pane {
+    position: absolute;
+    width: 21px;
+    height: 100%;
+    left: 10px;
+    cursor: pointer;
+}
+.wsdk-dark .wsdk-project-wizard-detail-image-popup .overlay .pane .image-pane {
+    position: absolute;
+    width: 400px;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    margin-left: -200px;
+}
+.wsdk-dark .wsdk-project-wizard-detail-image-popup .overlay .pane .image-pane .widthImg {
+    width: 100%;
+}
+.wsdk-dark .wsdk-project-wizard-detail-image-popup .overlay .pane .image-pane .heightImg {
+    height: 100%;
+}
+.wsdk-dark .wsdk-project-wizard-detail-image-popup .overlay .pane .right-button-pane {
+    position: absolute;
+    width: 21px;
+    height: 100%;
+    right: 10px;
+    cursor: pointer;
+}
+.wsdk-dark .wsdk-project-wizard-detail-image-popup .overlay .pane .image-pane .images {
+    width: 100%;
+    height: 90%;
+    top: 5%;
+    position: relative;
+    text-align: center;
+}
+.wsdk-dark .wsdk-project-wizard-detail-image-popup .overlay .close-button {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 5px;
+    top: 5px;
+    overflow: hidden;
+    background: url('resource/dialogCloseIcon.png');
+    cursor: pointer;
+}
+.wsdk-dark .wsdk-project-wizard-detail-image-popup .overlay .pane .left-button-pane .left-button {
+    width: 21px;
+    height: 100%;
+    background: url("resource/wsdk-project-wizard-platform-icon.png");
+    background-repeat: no-repeat;
+    background-position: -257px 50%;
+}
+.wsdk-dark .wsdk-project-wizard-detail-image-popup .overlay .pane .right-button-pane .right-button {
+    width: 21px;
+    height: 100%;
+    background: url("resource/wsdk-project-wizard-platform-icon.png");
+    background-repeat: no-repeat;
+    background-position: -225px 50%;
+}
+.wsdk-dark .wsdk-project-wizard-detail-image-popup .overlay .pane .right-button-pane .right-button:hover,
+.wsdk-dark .wsdk-project-wizard-detail-image-popup .overlay .pane .left-button-pane .left-button:hover,
+.wsdk-dark .wsdk-project-wizard-detail-image-popup .overlay .close-button:hover {
+    cursor: hand;
+}

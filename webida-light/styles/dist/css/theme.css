@@ -30,6 +30,7 @@
   /*Console View End*/
   /* WTC-3050 */
   /*plugin*/
+  /*codemirror*/
   /*loading screen start*/
   /*loading screen end*/
   /*icons*/
@@ -1241,6 +1242,10 @@ Splitters and gutters:
   height: 300px;
   overflow: auto;
   padding: 10px;
+}
+.webida-light .CodeMirror-scrollbar-filler,
+.webida-light .CodeMirror-gutter-filler {
+  background-color: transparent;
 }
 .webida-light .app-loading-elem {
   opacity: 1;

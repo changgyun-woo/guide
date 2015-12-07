@@ -1,0 +1,6 @@
+.wsdk-dark #plugin-settings-dialog-main {
+    width: 364px;
+    height: 300px;
+    overflow: auto;
+    padding: 10px;
+}

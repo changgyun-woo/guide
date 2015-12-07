@@ -1,0 +1,66 @@
+
+.wsdk-dark .dijitDialogPaneContentArea {
+    padding: 0;
+    background-color: transparent;
+}
+.wsdk-dark .webidaAboutDlgPane {
+    width: 410px;
+    height: 300px;
+    font-family: "Nanum Gothic Coding";
+    font-size: 9pt;
+    color: #D3DFEF;
+    overflow: hidden;
+    background-image: url('resource/background.png');
+    background-size: cover;
+    background-color: #282d34;
+    margin: 0;
+}
+
+.wsdk-dark .webidaAboutDlgPane .dijitDialogPaneContentArea {
+    padding: 0;
+}
+
+.wsdk-dark .webidaAboutLogoPane {
+    height: 96px;
+    text-align: center;
+    background-image: url('resource/wsdk-logo.png');
+    background-repeat: no-repeat;
+    background-position: 18px 0px;
+    margin: 20px auto;
+    text-indent: -1000px;
+    overflow: hidden;
+}
+
+.wsdk-dark .webidaAboutCopyRightPane {
+    margin-left: 15px;
+    text-align: center;
+    clear: both;
+    position: absolute;
+    bottom: 30px;
+    font-size: 11px;
+}
+
+.wsdk-dark .webidaAboutVersionPane {
+    margin: 25px auto 0;
+    border-radius: 4px;
+    background-color: #d7e2ed;
+}
+
+.wsdk-dark .webidaAboutDlgPane .caption {
+    margin: 6px 5px 0 15px;
+    margin-right: 5px;
+    font-size: 13px;
+    float: left;
+    clear: left;
+}
+
+.wsdk-dark .webidaAboutDlgPane .strong {
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.wsdk-dark .webidaAboutDlgPane .value {
+    font-size: 13px;
+    float: left;
+    margin-top: 6px;
+}

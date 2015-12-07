@@ -1,0 +1,118 @@
+.wsdk-dark #Output .consoleViewContentContainer .fileloc_link:hover {
+    color: #43caff;
+}
+.wsdk-dark #Output .consoleViewContentContainer .fileloc_link {
+    cursor: pointer;
+    color: #ccc;
+}
+
+.wsdk-dark #Output .console_toolbar {
+    background-image:url('resource/setting_nml.png');
+    width:16px;
+    height:16px;
+    float: right;
+    top:7px;
+    cursor: pointer;
+
+}
+
+.wsdk-dark #Output .console_toolbar_view {
+    float: right;
+    border : 1px;
+    background-color: RGB(54,57,60);
+    border: 1px none RGB(32,32,32);
+    width : 197px;
+    height: 94px;
+    border-radius: 5px;
+    margin-top: -10px;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    padding-left: 11px;
+    padding-top: 11px;
+    -webkit-box-shadow: -1px 2px 5px rgba(054,57,60, 0.75);
+    -moz-box-shadow: -1px 2px 5px rgba(54,57,60, 0.75);
+    box-shadow: -1px 2px 5px rgba(54,57,60, 0.75);
+}
+.wsdk-dark #Output .checkbox_off {
+    padding-left: 25px;
+    height: 16px;
+    width: 16px;
+    background: url('resource/checkbox_off.png') 0 0px no-repeat;
+}
+
+.wsdk-dark #Output .checkbox_on {
+    padding-left: 25px;
+    background: url('resource/checkbox_on.png') 0 0px no-repeat;
+    height: 16px;
+    width: 16px;
+}
+
+.wsdk-dark #Output .clear {
+    border-radius: 3px;
+    border:1px;
+    border-color: RGB(25,27,28);
+    width:40px;
+    height:18px;
+    color: #FFFFFF;
+    cursor: pointer;
+    background-image: -webkit-linear-gradient(top, RGB(101,114,122) 0%, RGB(55,61,65) 100%);
+    background-image: -moz-linear-gradient(top, RGB(101,114,122) 0%, RGB(55,61,65) 100%);
+    background-image: linear-gradient(to bottom, RGB(101,114,122) 0%, RGB(55,61,65) 100%);
+}
+
+.wsdk-dark #Output  .dijitButton .dijitButtonNode,
+.wsdk-dark #Output  .dijitDropDownButton .dijitButtonNode,
+.wsdk-dark #Output  .dijitComboButton .dijitButtonNode,
+.wsdk-dark #Output  .dijitToggleButton .dijitButtonNode {
+    color: #fff;
+    background-color: #778393;
+}
+/* hover status */
+.wsdk-dark #Output  .dijitButtonHover .dijitButtonNode,
+.wsdk-dark #Output  .dijitDropDownButtonHover .dijitButtonNode,
+.wsdk-dark #Output  .dijitComboButton .dijitButtonNodeHover,
+.wsdk-dark #Output  .dijitComboButton .dijitDownArrowButtonHover,
+.wsdk-dark #Output  .dijitToggleButtonHover .dijitButtonNode {
+    color: #fff;
+    background-color: #626c7a;
+}
+
+/* active, checked status */
+.wsdk-dark #Output  .dijitButtonActive .dijitButtonNode,
+.wsdk-dark #Output  .dijitDropDownButtonActive .dijitButtonNode,
+.wsdk-dark #Output  .dijitComboButtonActive .dijitButtonNode,
+.wsdk-dark #Output  .dijitToggleButtonActive .dijitButtonNode,
+.wsdk-dark #Output  .dijitToggleButtonChecked .dijitButtonNode {
+    color: #fff;
+    background-color: #626c7a;
+}
+.wsdk-dark #Output  {
+    border-top: 0!important;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+.wsdk-dark #Output  .consoleViewContentContainer {
+    height: calc(100% - 37px);
+    background-color: transparent;
+    border-bottom: 0;
+    color: #7e8c9f;
+}
+.wsdk-dark .viewToolbarBackground {
+    border-left: 0!important;
+    border-right: 0!important;
+}
+.wsdk-dark #Output .viewToolbarBackground {
+    background-image: none;
+    height: 28px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #3c4049;
+    color: #7e8c9f;
+    left:0px;
+    top:0;
+    border-left: 0;
+    border-right: 0;
+    box-sizing: border-box;
+}

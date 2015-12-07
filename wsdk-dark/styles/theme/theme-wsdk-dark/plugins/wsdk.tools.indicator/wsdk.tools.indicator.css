@@ -1,0 +1,78 @@
+.app-workbench-top-userinfo .userinfo__menu {
+    float: right;
+}
+
+.wsdk-tools-indicator {
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.wsdk-tools-indicator *,
+.wsdk-tools-indicator *:after,
+.wsdk-tools-indicator *:before {
+    box-sizing: border-box;
+}
+.wsdk-tools-indicator:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.wsdk-tools-indicator .column {
+    float: right;
+    position: relative;
+    padding: 2px;
+}
+
+.wsdk-tools-indicator .resources {
+    height: 100%;
+}
+.wsdk-tools-indicator .resources:hover {
+    background: rgba(255, 255, 255, 0.06);
+}
+.wsdk-tools-indicator .resources:hover .indicator {
+    background: #fad7a0;
+}
+.wsdk-tools-indicator .resources:hover .indicator.warn {
+    background: #e74c3c;
+}
+.wsdk-tools-indicator .resources:hover .resource:after {
+    background: #85c1e9;
+}
+
+.wsdk-tools-indicator .resource {
+    position: relative;
+    padding: 0;
+    width: 80px;
+    color: #fff;
+    font-size: 10px;
+    line-height: 22px;
+}
+.wsdk-tools-indicator .resource:after {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    margin-top: 8px;
+    width: 50px;
+    height: 3px;
+    background: #5dade2;
+    content: "";
+}
+
+.wsdk-tools-indicator .indicator {
+    display: inline-block;
+    position: absolute;
+    z-index: 10;
+    left: 30px;
+    margin-top: 8px;
+    background: #85c1e9;
+    content: "";
+    height: 3px;
+    transition: width 2s;
+}
+.wsdk-tools-indicator .indicator.warn {
+    background: #e74c3c;
+}

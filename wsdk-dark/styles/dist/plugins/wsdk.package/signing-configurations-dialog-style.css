@@ -1,0 +1,894 @@
+/* wizard pages */
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .distributor-key-store-page .file-input,
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .author-key-store-page .file-input {
+    display: block !important;
+    width: 24px !important;
+    height: 24px !important;
+    opacity: 0 !important;
+    overflow: hidden !important;
+}
+
+
+/* dialog background */
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .tizen-config-icon,
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-config-icon,
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .toolbar-separator,
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .background {
+    background-image: url('resource/spritesheet.png');
+    background-repeat: no-repeat;
+}
+
+/* dialog toolbar, button */
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .toolbar {
+    background-color: rgba(194,204,212,1);
+    height: 32px;
+    width: 464px;
+    border: 0;
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .detail {
+    background-color:transparent;
+    padding: 0;
+    border: 0;
+    font-size: 12px;
+}
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .detail .option-label:before {
+    content: '';
+    display: inline-block;
+    background-image: url('resource/spritesheet.png');
+    background-repeat: no-repeat;
+    background-position: -762px -50px;
+    cursor: pointer;
+    width: 25px;
+    height: 22px;
+    vertical-align: middle;
+}
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .toolbar button {
+    background-color:transparent;
+    padding: 0;
+    border: 0;
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .toolbar-separator {
+    display: inline-block;
+    width: 10px;
+    vertical-align: top;
+    height: 30px;
+    background-position: 5px -62px;
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .new {
+    width: 28px;
+    height: 32px;
+    background-position: -646px -4px;
+    cursor: pointer;
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .rename-disabled {
+    width: 28px;
+    height: 32px;
+    background-position: -730px -4px;
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .rename-enabled {
+    width: 28px;
+    height: 32px;
+    background-position: -688px -4px;
+    cursor: pointer;
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .defaultize-disabled {
+    width: 28px;
+    height: 32px;
+    background-position: -204px -4px;
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .defaultize-enabled {
+    width: 28px;
+    height: 32px;
+    background-position: -245px -4px;
+    cursor: pointer;
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .delete-disabled {
+    width: 28px;
+    height: 32px;
+    background-position: -286px -4px;
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .delete-enabled {
+    width: 28px;
+    height: 32px;
+    background-position: -326px -4px;
+    cursor: pointer;
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .detail-disabled {
+    height: 34px;
+    border-width: 2px;
+    margin-top: 6px;
+    opacity: 0.4;
+}
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .detail-enabled {
+    height: 34px;
+    border-width: 2px;
+    margin-top: 6px;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    color: rgba(50,90,142,1);
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .detail-pressed .option-label:before {
+    content: '';
+    display: inline-block;
+    background-image: url('resource/spritesheet.png');
+    background-repeat: no-repeat;
+    background-position: -790px -50px;
+    cursor: pointer;
+    width: 25px;
+    height: 22px;
+    vertical-align: middle;
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .close {
+    margin-top: 10px;
+    float:right;
+    border: 0;
+    color: #272a2d;
+    padding: 2px 4px 4px 4px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    background-color: rgba(147,167,195,1);
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .close:hover {
+    background-color: rgba(162,183,212,1);
+    color: rgba(39,42,45,1);
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .close:active {
+    background-color: rgba(66,76,91,1);
+    color: rgba(25,27,28,1);
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .close:disabled {
+    color: rgba(83,92,105,1);
+    cursor: default;
+    opacity: 0.5;
+}
+
+/* dialog config list */
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .list {
+    background-color: rgba(212,219,226,1);
+    width: 450px;
+    border: 0;
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .configs {
+    height: 100px;
+    display: inline-flex;
+}
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .configs .row {
+    width: 450px;
+    overflow-x: auto;
+}
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .config {
+    cursor:pointer;
+    border: 1px transparent solid;
+    border-collapse: collapse;
+    display:block;
+    float: left;
+    padding: 0;
+    margin: 0.625rem 0.3rem;
+    text-align: center;
+    position: relative;
+    height: 76px;
+    width: 66px;
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .config:hover {
+    background-color: rgba(162,183,212,1);
+    color: rgba(39,42,45,1);
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .selected {
+    background-color: #d1e8ff;
+    border-color: #64b4db;
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .default-mark {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 24px;
+    top: -15px;
+    background-position: -244px -4px;
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .config .image {
+    width: 80px;
+    height: 80px;
+    font-size: 80px;
+    text-align: center;
+    left: 50%;
+    margin-left: -24px;
+    position: absolute;
+    top: 0;
+    margin-top: 8px;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .config .label {
+    text-align: center;
+    vertical-align: middle;
+    font-weight:  400;
+    line-height:  1.1;
+    font-style:  normal;
+    height: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-size:  0.875rem;
+    bottom: 0px;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    word-wrap:normal;
+    width:66px;
+    overflow: hidden;
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .rename-input {
+    text-align: center;
+    vertical-align: middle;
+    font-weight:  400;
+    line-height:  1.1;
+    font-style:  normal;
+    height: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-size:  0.875rem;
+    bottom: 4px;
+    width: 95%;
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .tizen-config-icon {
+    width: 50px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: -20px -30px;
+    position: relative;
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .tizen-config-icon:after {
+    position: absolute;
+    content: 'Tizen';
+    top: 16px;
+    left: 3px;
+    font-size: 7px;
+    text-align: center;
+    color: #fff;
+    width: 42px;
+}
+
+/* dialog detail */
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .detail-pane {
+    background-color: rgba(212,219,226,1);
+    width: 450px;
+    padding: 0;
+    border: 0;
+}
+/* dialog tizen configuration details */
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .tizen-details-content-pane {
+    overflow: auto;
+    width: 100%;
+    background-color: rgba(212,219,226,1);
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .tizen-details .dgrid-cell {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: 20px;
+}
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .tizen-details .dgrid-header .dgrid-cell {
+    background-color: rgba(226,234,241,1);
+    text-align: center;
+    color: rgba(54,57,60,1);
+    font-size: 11px;
+}
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .tizen-details .dgrid-content .dgrid-cell {
+    background-color: rgba(243,247,251,1);
+    text-align: center;
+    padding: 8px 3px;
+}
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .tizen-details .dgrid-content .dgrid-cell:empty {
+    height: 30px;
+}
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .tizen-details .dgrid-header-scroll {
+    background-color: transparent!important;
+}
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .tizen-details .author-container .dgrid {
+    height: 65px;
+    clear: both;
+}
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .tizen-details .distributor-container .dgrid {
+    height: 90px;
+    clear: both;
+}
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .tizen-details .dgrid .field-key-store-password {
+    width: 128px;
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .tizen-details .divider {
+    height: 6px;
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .tizen-details .distributor-container .distributor-title{
+    padding-bottom: 10px;
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .tizen-details .author-title,
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .tizen-details .distributor-title {
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 10px;
+    display: inline-block;
+    padding-left: 4px;
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .tizen-details .author-name-label,
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .tizen-details .author-name,
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .tizen-details .distributor-name-label,
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .tizen-details .distributor-name {
+    font-size: 12px;
+    color: rgba(109,109,109,1);
+    padding-bottom: 20px;
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .tizen-details .author-export-button,
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .tizen-details .distributor-export-button{
+    float: right;
+    background-image: url('resource/spritesheet.png');
+    background-repeat: no-repeat;
+    background-position: -762px -4px;
+    border: 0;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 5px;
+    text-indent: -100px;
+    overflow: hidden;
+    width: 28px;
+    height: 32px;
+}
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .tizen-details .author-export-button:hover,
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .tizen-details .distributor-export-button:hover{
+    box-shadow: none;
+    background-color: transparent;
+}
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .tizen-details .author-container hr,
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .tizen-details .distributor-container hr {
+    background-color: rgba(175,180,187,1);
+    border: 0;
+    margin: 17px 0;
+    height: 1px;
+}
+
+.wsdk-dark .wsdk-package-new-configuration-wizard-root {
+    width: 535px;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wsdk-common-wizard-root .indicator {
+    margin-top: 0;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wsdk-common-wizard-root .indicator .page {
+    position: relative;
+    background: transparent;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wsdk-common-wizard-root .indicator .page:nth-child(1) {
+    z-index: 300;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wsdk-common-wizard-root .indicator .page:nth-child(1) span:before {
+    background: transparent;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wsdk-common-wizard-root .indicator .page:nth-child(2) {
+    left:-5px;
+    z-index: 200;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wsdk-common-wizard-root .indicator .page:nth-child(3) {
+    left:-10px;
+    z-index: 100;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wsdk-common-wizard-root .indicator .page:nth-child(3) span:after {
+    display: none;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wsdk-common-wizard-root .indicator .page span{
+    width: 175px;
+    height: 25px;
+    border-radius: 0;
+    background-color: rgba(132,148,170,1);
+    font-weight: bold;
+    font-size: 11px;
+    color: rgba(65,75,90,1);
+    text-decoration: none;
+    margin-right: 10px;
+    vertical-align: middle;
+    line-height: 27px;
+    display: block;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wsdk-common-wizard-root .indicator .page span:after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 157px;
+    top: 14px;
+    z-index: 1;
+    width: 17px;
+    height: 17px;
+    background-color: rgba(132,148,170,1);
+    transform: rotate(225deg) translateY(14px);
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wsdk-common-wizard-root .indicator .page span:before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: -18px;
+    top: 14px;
+    z-index: 1;
+    width: 17px;
+    height: 17px;
+    background-color: rgba(237,242,249,1);
+    transform: rotate(225deg) translateY(14px);
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wsdk-common-wizard-root .indicator .page.active span{
+    background-color: rgba(174,204,243,1);
+    color: rgba(0,0,0,1);
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wsdk-common-wizard-root .indicator .page.active span:after{
+    background-color: rgba(174,204,243,1);
+    color: rgba(0,0,0,1);
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content {
+    min-width: 400px;
+    min-height: 200px;
+    background-color: rgba(212,219,226,1);
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .signing-configuration-page {
+    padding: 15px 10px;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .signing-configuration-page .row {
+    text-align: center;
+    padding: 10px 0;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .signing-configuration-page .row .name-label,
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .signing-configuration-page .row .type-label{
+    font-weight: bold;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .signing-configuration-page .row .name-input{
+    width: 300px;
+    height: 20px;
+    border: 1px #7e8897 solid;
+    color: rgba(82,87,92,1);
+    background: rgba(230,233,237,1);
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .signing-configuration-page .row .type-select{
+    width: 300px;
+    margin-left: 4px;
+    height: 22px;
+    border: 1px #7e8897 solid;
+    color: rgba(82,87,92,1);
+    background: rgba(230,233,237,1);
+    font-size: 12px;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .signing-configuration-page .message-group {
+    padding-left: 126px;
+    margin-top: -7px;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .signing-configuration-page .message-group .message-label{
+    color: #ff0000;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .signing-configuration-page .type-description {
+    width: 300px;
+    margin-left: 1px;
+    background-color: #efefef;
+    text-align: justify;
+    padding: 8px;
+    display: block;
+    box-sizing: border-box;
+}
+.wsdk-dark .wsdk-common-wizard-root .button button {
+    margin-top: 10px;
+    border: 0;
+    color: #272a2d;
+    padding: 2px 4px 4px 4px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    background-color: rgba(147,167,195,1);
+    cursor: pointer;
+    margin-left: 5px;
+    box-shadow: none;
+}
+.wsdk-dark .wsdk-common-wizard-root .button button:hover {
+    background-color: rgba(162,183,212,1);
+    color: rgba(39,42,45,1);
+}
+.wsdk-dark .wsdk-common-wizard-root .button button:active {
+    background-color: rgba(66,76,91,1);
+    color: rgba(25,27,28,1);
+}
+.wsdk-dark .wsdk-common-wizard-root .button button:disabled {
+    background-color: rgba(147,167,195,1);
+    color: rgba(83,92,105,1);
+    cursor: default;
+    opacity: 0.5;
+}
+.wsdk-dark .wsdk-common-wizard-root .button .right {
+    float: right;
+}
+.wsdk-dark .wsdk-common-wizard-root .button .next {
+    position: relative;
+    width: 60px;
+    margin-right: 10px;
+}
+.wsdk-dark .wsdk-common-wizard-root .button .prev {
+    margin-left: 10px;
+    position: relative;
+    width: 60px;
+}
+.wsdk-dark .wsdk-common-wizard-root .button .finish {
+    width: 70px;
+}
+.wsdk-dark .wsdk-common-wizard-root .button .next:after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 43px;
+    top: 13px;
+    z-index: 1;
+    width: 14px;
+    height: 14px;
+    background-color: rgba(147,167,195,1);
+    transform: rotate(225deg) translateY(14px);
+}
+.wsdk-dark .wsdk-common-wizard-root .button .next:hover:after{
+    background-color: rgba(162,183,212,1);
+}
+.wsdk-dark .wsdk-common-wizard-root .button .next:disabled:after {
+    background-color: rgba(147,167,195,1);
+    cursor: default;
+}
+.wsdk-dark .wsdk-common-wizard-root .button .next:active:after {
+    background-color: rgba(66,76,91,1);
+}
+.wsdk-dark .wsdk-common-wizard-root .button .prev:after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: -17px;
+    top: 13px;
+    z-index: 1;
+    width: 16px;
+    height: 15px;
+    background-color: rgba(147,167,195,1);
+    transform: rotate(225deg) translateY(14px);
+}
+.wsdk-dark .wsdk-common-wizard-root .button .prev:hover:after{
+    background-color: rgba(162,183,212,1);
+}
+.wsdk-dark .wsdk-common-wizard-root .button .prev:disabled:after {
+    background-color: rgba(147,167,195,1);
+    cursor: default;
+}
+.wsdk-dark .wsdk-common-wizard-root .button .prev:active:after {
+    background-color: rgba(66,76,91,1);
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .author-key-store-page {
+    padding: 15px 10px;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .author-key-store-page .import-button {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    border: 0;
+    color: #272a2d;
+    padding: 2px 8px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    background-color: rgba(147,167,195,1);
+    cursor: pointer;
+    margin-left: 5px;
+    box-shadow: none;
+    background-image: url('resource/spritesheet.png');
+    background-position: -786px -8px;
+    text-indent: -100px;
+    overflow: hidden;
+    width: 34px;
+    height: 26px;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .author-key-store-page .import-button:hover {
+    background-color: rgba(162,183,212,1);
+    color: rgba(39,42,45,1);
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .author-key-store-page .import-button:active {
+    background-color: rgba(147,167,195,1);
+    color: rgba(25,27,28,1);
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .author-key-store-page .import-button:disabled {
+    background-color: rgba(147,167,195,1);
+    color: rgba(83,92,105,1);
+    cursor: default;
+    opacity: 0.5;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .author-key-store-page .row{
+    padding: 10px 10px 4px 10px;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .author-key-store-page .row:after{
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .author-key-store-page .row .name-label,
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .author-key-store-page .row .key-store-password-label,
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .author-key-store-page .row .key-store-password-confirm-label {
+    font-weight: bold;
+    width: 130px;
+    display: inline-block;
+}
+
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .author-key-store-page .row .name-input,
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .author-key-store-page .row .key-store-password-input,
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .author-key-store-page .row .key-store-password-confirm-input {
+    width: 300px;
+    height: 20px;
+    border: 1px #7e8897 solid;
+    color: rgba(82,87,92,1);
+    background: rgba(230,233,237,1);
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .author-key-store-page hr{
+    border-bottom: 0;
+    border-top: 1px rgba(175,180,187,1) solid;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .author-key-store-page .optional-group {
+    color: rgba(50,90,142,1);
+    padding: 0 5px;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .author-key-store-page .optional-group .option-label {
+    cursor: pointer;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .author-key-store-page .optional-group .option-label:before {
+    content: '';
+    display: inline-block;
+    background-image: url('resource/spritesheet.png');
+    background-repeat: no-repeat;
+    background-position: -762px -50px;
+    cursor: pointer;
+    width: 28px;
+    height: 22px;
+    vertical-align: middle;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .author-key-store-page .optional-group .option-label.active:before {
+    content: '';
+    display: inline-block;
+    background-image: url('resource/spritesheet.png');
+    background-repeat: no-repeat;
+    background-position: -790px -50px;
+    cursor: pointer;
+    width: 28px;
+    height: 22px;
+    vertical-align: middle;
+}
+
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .author-key-store-page .row .country-label,
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .author-key-store-page .row .state-label,
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .author-key-store-page .row .city-label,
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .author-key-store-page .row .organization-label,
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .author-key-store-page .row .department-label,
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .author-key-store-page .row .email-label {
+    font-weight: bold;
+    width: 130px;
+    display: inline-block;
+    color: rgba(86,95,107,1);
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .author-key-store-page .row .country-input,
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .author-key-store-page .row .state-input,
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .author-key-store-page .row .city-input,
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .author-key-store-page .row .organization-input,
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .author-key-store-page .row .department-input,
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .author-key-store-page .row .email-input {
+    width: 300px;
+    height: 20px;
+    border: 1px #7e8897 solid;
+    color: rgba(82,87,92,1);
+    background: rgba(230,233,237,1);
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .author-key-store-page .close-button{
+    background: url("resource/dialogCloseIcon.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 2px;
+    right: 6px;
+    text-indent: -1000px;
+    overflow: hidden;
+    border: 0;
+    cursor: pointer;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .distributor-key-store-page .drop-zone {
+    height: 100px;
+    border: dashed 1px rgba(126,136,151,1);
+    width: 460px;
+    margin: 27px auto 0 auto;
+    color: rgba(153,167,188,1);
+    font-size: 15px;
+    text-align: center;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .author-key-store-page .drop-zone {
+    height: 90px;
+    border: dashed 1px rgba(126,136,151,1);
+    width: 460px;
+    margin: 27px auto 0 auto;
+    font-size: 15px;
+    text-align: center;
+    line-height: 90px;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .author-key-store-page .drop-zone .drop-zone-label,
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .distributor-key-store-page .drop-zone .drop-zone-label {
+    color: rgba(153,167,188,1);
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .author-key-store-page .drop-zone .drop-zone-label.drop {
+    color: rgba(174,204,243,1);
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .distributor-key-store-page .drop-zone .drop-zone-label.drop {
+    color: rgba(153,167,188,1);
+}
+
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .author-key-store-page .author-dark {
+    background-color: rgba(32,33,34,0.85);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .distributor-key-store-page .author-dark {
+    background-color: rgba(212,219,226,1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .distributor-key-store-page .drop-zone .browse-button {
+    position: absolute;
+    bottom: 78px;
+    right: 45px;
+    border: 0;
+    color: #272a2d;
+    padding: 2px 8px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    background-color: rgba(147,167,195,1);
+    cursor: pointer;
+    margin-left: 5px;
+    box-shadow: none;
+    background-image: url('resource/spritesheet.png');
+    background-position: -732px -48px;
+    text-indent: -100px;
+    overflow: hidden;
+    width: 10px;
+    height: 20px;
+    cursor: pointer;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .author-key-store-page .browse-button {
+    position: absolute;
+    bottom: 90px;
+    right: 45px;
+    border: 0;
+    color: #272a2d;
+    padding: 2px 8px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    background-color: rgba(147,167,195,1);
+    cursor: pointer;
+    margin-left: 5px;
+    box-shadow: none;
+    background-image: url('resource/spritesheet.png');
+    background-position: -732px -48px;
+    text-indent: -100px;
+    overflow: hidden;
+    width: 10px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .author-key-store-page input[type=file]::-webkit-file-upload-button,
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .distributor-key-store-page input[type=file]::-webkit-file-upload-button{
+    cursor: pointer;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .distributor-key-store-page .drop-zone .browse-button:hover,
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .author-key-store-page .browse-button:hover {
+    background-color: rgba(162,183,212,1);
+    color: rgba(39,42,45,1);
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .distributor-key-store-page .drop-zone .browse-button:active,
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .author-key-store-page .browse-button:active {
+    background-color: rgba(147,167,195,1);
+    color: rgba(25,27,28,1);
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .distributor-key-store-page .drop-zone .browse-button:disabled,
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .author-key-store-page .browse-button:disabled {
+    background-color: rgba(147,167,195,1);
+    color: rgba(83,92,105,1);
+    cursor: default;
+    opacity: 0.5;
+}
+
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .author-key-store-page .author-dark .key-store-password-label {
+    font-weight: bold;
+    width: 130px;
+    display: inline-block;
+    color: rgba(222,222,222,1);
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .author-key-store-page .author-dark .key-store-password-input {
+    width: 150px;
+    height: 20px;
+    border: 1px rgba(126,136,151,1) solid;
+    color: rgba(222,222,222,1);
+    background: rgba(91,96,102,1);
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .distributor-key-store-page .key-store-group,
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .author-key-store-page .author-dark .key-store-group {
+    float:left;
+    padding-left: 26px;
+}
+
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .distributor-key-store-page .key-store-password-label {
+    font-weight: bold;
+    width: 130px;
+    display: inline-block;
+    color: initial;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .distributor-key-store-page .key-store-password-input {
+    width: 150px;
+    height: 20px;
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .distributor-key-store-page .row,
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .author-key-store-page .row {
+    padding: 10px 10px 4px 10px;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .distributor-key-store-page .row:after,
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .author-key-store-page .row:after {
+    content:'';
+    display: block;
+    clear: both;
+}

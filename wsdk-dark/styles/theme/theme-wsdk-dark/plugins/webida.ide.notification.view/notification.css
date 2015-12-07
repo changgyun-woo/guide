@@ -1,0 +1,18 @@
+.wsdk-dark #notificationTab .notification-view {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.wsdk-dark #notificationTab .notification-view .notification-contents {
+    margin: 0px;
+    padding: 10px;
+    background-color: transparent;
+    width: 100%;
+    position: absolute;
+    color: #7e8c9f;
+}
+.wsdk-dark #notificationTab p.notification-message {
+    margin: 0.3em 0.6em;
+    line-height: 1.3em;
+    font-size: 8pt;
+}

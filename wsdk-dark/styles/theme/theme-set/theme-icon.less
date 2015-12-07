@@ -1,0 +1,96 @@
+
+.webida-tool-bar-icon-normal {
+  background-position: 0 0;
+}
+.webida-tool-bar-icon-hover {
+  background-position: -20px 0;
+}
+.webida-tool-bar-icon-disabled {
+  background-position: 0px 0;
+}
+.webida-tool-bar-icon-clicked {
+  background-position: -60px 0;
+}
+
+.dijitDownArrowButton .dijitArrowButtonInner {
+  background-image: @toolbar_arrow;
+  background-position: -22px -2px;
+}
+
+.wvIconCollapseAll {
+  background-image: @workspace-TabPaneWrapper-icon_collapseall;
+}
+.wvIconCollapseAll:hover {
+  background-position: -20px 0;
+}
+.wvIconCollapseAll:active {
+  background-position: -40px 0;
+}
+.wvIconSyncNormal, .wvIconSyncNormalToggled, .wvIconSyncHover, .wvIconSyncHoverToggled, .wvIconSyncClicked, .wvIconSyncClickedToggled {
+  background-image: @workspace-TabPaneWrapper-icon_sync;
+}
+.wvIconSyncClicked {
+  background-position: -40px 0 !important;
+}
+.wvIconSyncClickedToggled {
+  background-position: -100px 0 !important;
+}
+.wvIconSyncHover {
+  background-position: -20px 0 !important;
+}
+.wvIconSyncHoverToggled {
+  background-position: -80px 0 !important;
+}
+.wvIconSyncNormal {
+  background-position: 0 0 !important;
+}
+.wvIconSyncNormalToggled {
+  background-position: -60px 0 !important;
+}
+
+/*run*/
+#run-configuration-create-button {
+  background: url('../images/icons/icon_run_add.png') no-repeat;
+  width: 20px;
+  height: 20px
+}
+#run-configuration-delete-button {
+  background: url('../images/icons/icon_run_del.png') no-repeat;
+  width: 20px;
+  height: 20px
+}
+
+.dijitButtonHover #run-configuration-create-button,
+.dijitButtonHover #run-configuration-delete-button {
+  background-position: -20px 0;
+}
+.dijitButtonActive #run-configuration-create-button,
+.dijitButtonActive #run-configuration-delete-button {
+  background-position: -60px 0;
+}
+.dijitButtonDisabled #run-configuration-create-button,
+.dijitButtonDisabled #run-configuration-delete-button {
+  background-position: -40px 0;
+}
+
+#run-configuration-list .dijitButton {
+  margin: 0.2em 0;
+}
+
+#run-configuration-list .dijitButton .dijitButtonNode {
+  border: 0;
+  color: #272a2d;
+  padding: 2px 0px 4px 4px;
+  border-radius: 2px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+/* workbench */
+#app-workbench-top-userinfo .dijitArrowButtonInner {
+  background: url('../images/icons/icon_user.png') no-repeat !important;
+  width: 22px;
+  height: 22px;
+}

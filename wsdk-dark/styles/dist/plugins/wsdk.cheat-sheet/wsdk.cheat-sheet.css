@@ -1,0 +1,349 @@
+@import url(//fonts.googleapis.com/css?family=Raleway:400,500,700);
+
+.wsdk-cheat-sheet {
+    /* background: #45494a; */
+    color: #BBBBBB;
+    font-weight: 400;
+    font-family: 'Raleway', Arial, sans-serif;
+    min-height: 100%;
+}
+
+.wsdk-cheat-sheet a {
+    color: #BBBBBB;
+    text-decoration: none;
+}
+
+.wsdk-cheat-sheet a,
+.wsdk-cheat-sheet a:focus,
+.wsdk-cheat-sheet a:visited {
+    color: #1E75BB;
+}
+
+.wsdk-cheat-sheet a:hover {
+    color: #00BCF2;
+}
+
+.wsdk-cheat-sheet > section {
+    padding: 2em 0;
+    font-size: 1.25em;
+    min-height: 100%;
+}
+
+/* Header */
+.wsdk-cheat-sheet .header {
+    padding: 2em 0 1em 1em;
+    letter-spacing: -1px;
+}
+
+.wsdk-cheat-sheet .header h1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-weight: 800;
+    font-size: 2em;
+    line-height: 1;
+}
+
+.wsdk-cheat-sheet .header h1 span {
+    display: block;
+    font-size: 80%;
+    font-weight: 400;
+    padding-top: 0.325em;
+    /* color: #bdc2c9; */
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 30em) {
+    .wsdk-cheat-sheet .container > section {
+        padding: 3em 0;
+    }
+}
+
+/* Default tab style */
+.wsdk-cheat-sheet .tabs {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+    font-weight: 300;
+    font-size: 1em;
+}
+
+/* Nav */
+.wsdk-cheat-sheet .tabs nav {
+    text-align: center;
+}
+
+.wsdk-cheat-sheet .tabs nav ul {
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1200px;
+    list-style: none;
+    flex-flow: row wrap;
+}
+
+.wsdk-cheat-sheet .tabs nav ul li {
+    position: relative;
+    z-index: 1;
+    display: block;
+    margin: 0;
+    text-align: center;
+    flex: 1;
+}
+
+.wsdk-cheat-sheet .tabs nav a {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 2.5;
+    color: #BBBBBB;
+}
+
+.wsdk-cheat-sheet .tabs nav a:hover {
+    color: #00BCF2;
+}
+
+.wsdk-cheat-sheet .tabs nav a span {
+    vertical-align: middle;
+    font-size: 0.75em;
+}
+
+.wsdk-cheat-sheet .tabs nav li.tab-current a {
+    /* color: #2CC185; */
+    color: #3b8dc3;
+}
+
+/* Content */
+.wsdk-cheat-sheet .content-wrap {
+    position: relative;
+}
+
+.wsdk-cheat-sheet .content-wrap section {
+    display: none;
+    margin: 0 auto;
+    padding: 1em;
+    max-width: 1200px;
+    text-align: left;
+}
+
+.wsdk-cheat-sheet .content-wrap section li {
+    text-align: left;
+    line-height: 1.6;
+}
+
+.wsdk-cheat-sheet .content-wrap section.content-current {
+    display: block;
+}
+
+@media screen and (max-width: 58em) {
+    .wsdk-cheat-sheet .tabs nav a.icon span {
+        display: none;
+    }
+    .wsdk-cheat-sheet .tabs nav a:before {
+        margin-right: 0;
+    }
+}
+
+/*****************************/
+/* Triangle and line */
+/*****************************/
+
+.wsdk-cheat-sheet .tabs-style-linetriangle nav a {
+    overflow: visible;
+    border-bottom: 1px solid rgba(59,141,195,0.8); /* #3b8dc3; */
+    transition: color 0.2s;
+}
+
+.wsdk-cheat-sheet .tabs-style-linetriangle nav a span {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 1.2em;
+}
+
+.wsdk-cheat-sheet .tabs-style-linetriangle nav li.tab-current a:after,
+.wsdk-cheat-sheet .tabs-style-linetriangle nav li.tab-current a:before {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: solid transparent;
+    content: '';
+    pointer-events: none;
+}
+
+.wsdk-cheat-sheet .tabs-style-linetriangle nav li.tab-current a:after {
+    margin-left: -10px;
+    border-width: 10px;
+    border-top-color: #3b8dc3;
+}
+
+.wsdk-cheat-sheet .tabs-style-linetriangle nav li.tab-current a:before {
+    margin-left: -11px;
+    border-width: 11px;
+    border-top-color: rgba(0,0,0,0.2);
+}
+
+@media screen and (max-width: 58em) {
+    .wsdk-cheat-sheet .tabs-style-linetriangle nav {
+        font-size: 0.6em;
+    }
+}
+
+.wsdk-cheat-sheet .hr {
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.wsdk-cheat-sheet img {
+    height: auto;
+    width: auto;
+    border: 0;
+    margin-top: .5em;
+    transition: visibility 0s linear 0s,opacity 400ms 0ms;
+}
+.wsdk-cheat-sheet img.small {
+    max-width: 360px;
+}
+.wsdk-cheat-sheet img.middle {
+    max-width: 480px;
+}
+.wsdk-cheat-sheet img.large {
+    max-width: 720px;
+}
+
+.wsdk-cheat-sheet table td img {
+    margin-top: 1em;
+}
+
+.wsdk-cheat-sheet table td + td {
+    padding: 0 20px;
+}
+
+.wsdk-cheat-sheet table.comparison-table {
+    border-collapse: collapse;
+}
+.wsdk-cheat-sheet table.comparison-table th,
+.wsdk-cheat-sheet table.comparison-table td {
+    text-align: center;
+    border: 1px solid rgba(59,141,195,0.2);
+    padding: 6px;
+}
+.wsdk-cheat-sheet table.comparison-table th {
+    font-weight: normal;
+    border-bottom-width: thick;
+}
+.wsdk-cheat-sheet table.comparison-table strong+p {
+    font-size: 75%;
+    padding: 0;
+    padding-top: 10px;
+}
+.wsdk-cheat-sheet table.comparison-table.left td {
+    text-align: left;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+.wsdk-cheat-sheet table.comparison-table.left td.center {
+    text-align: center;
+}
+
+.wsdk-cheat-sheet code {
+    background-color: #414141;
+    border: none;
+    /* border-radius: 2px; */
+    padding: 3px 5px;
+    font-family: Consolas;
+    font-size: 13px;
+}
+
+.wsdk-cheat-sheet .danger {
+    color: #C9302C;
+}
+.wsdk-cheat-sheet .warning {
+    color: #EC971F;
+}
+.wsdk-cheat-sheet .warning:before {
+    content: 'Note: '
+}
+.wsdk-cheat-sheet .info {
+    color: #269ABC;
+}
+
+.wsdk-cheat-sheet .try-it {
+    background-color: #1E75BB;
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: top;
+    border-radius: .25em;
+    opacity: .75;
+}
+.wsdk-cheat-sheet .try-it:hover,
+.wsdk-cheat-sheet .try-it:focus {
+    background-color: #00BCF2;
+    cursor: pointer;
+}
+.wsdk-cheat-sheet .try-it a,
+.wsdk-cheat-sheet .try-it a:hover,
+.wsdk-cheat-sheet .try-it a:focus,
+.wsdk-cheat-sheet .try-it a:visited {
+    color: #fff;
+}
+
+.wsdk-cheat-sheet .panel {
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+}
+.wsdk-cheat-sheet .panel-heading {
+    border-bottom: 1px solid rgba(59,141,195,0.2);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.wsdk-cheat-sheet .panel-default {
+    border-color: rgba(59,141,195,0.2);
+}
+.wsdk-cheat-sheet .panel-default > .panel-heading {
+    padding: 3px 5px;
+    background-color: rgba(59,141,195,0.4);
+}
+.wsdk-cheat-sheet .panel-default > .panel-body {
+    padding: 15px;
+}
+.wsdk-cheat-sheet p {
+    margin: 1em 0;
+    padding: 0;
+}
+.wsdk-cheat-sheet .col-md-2 {
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+    padding: 0 24px;
+}
+.wsdk-cheat-sheet strong {
+    color: #D19A67;
+}
+.wsdk-cheat-sheet .run-configuration-create-button {
+    display: inline-block;
+    background: url('resource/icon_run_add.png') no-repeat;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    background-position: -60px 0;
+}
+.wsdk-cheat-sheet .signing-configuration-new-button {
+    display: inline-block;
+    background: url('resource/spritesheet.png') no-repeat;
+    width: 28px;
+    height: 32px;
+    vertical-align: middle;
+    background-position: -646px -44px;
+}

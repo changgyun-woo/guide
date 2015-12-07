@@ -1,0 +1,86 @@
+.wsdk-dark #PreviewTab {
+    color: rgba(126, 140, 159, 1);
+    border-top: 0!important;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+.wsdk-dark #PreviewTab #preview-image-toolbar {
+    display: none;
+}
+.wsdk-dark #PreviewTab .iv-info-size {
+    margin-top: 6px;
+    display: inline-block;
+}
+.wsdk-dark #PreviewTab .iv-info-bt-pane {
+    float: right;
+    margin-right: 40px;
+}
+.wsdk-dark #PreviewTab .preview-toolbar-panel {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 30px;
+    color: #494949;
+    font-weight: bold;
+    color: rgba(126, 140, 159, 1);
+    background-color: rgba(55, 58, 67, 1);
+    background-image: none;
+    margin-top: 1px;
+    border: 0 ;
+}
+.wsdk-dark #PreviewTab .preview-toolbar-ext-panel {
+    position: absolute;
+    top: 31px;
+    padding: 0 0px;
+    box-sizing: border-box;
+    border: 0;
+    background-color: transparent;
+    color: #7e8c9f;
+}
+.wsdk-dark #PreviewTab .preview-content-panel {
+    position: absolute;
+    top: 60px; /* 30px */
+    width: 100%;
+    height: calc(100% - 69px);
+    overflow: auto;
+    color: #ccd5dc;
+    background-color: transparent;
+}
+.wsdk-dark #PreviewTab .preview-content-panel pre,
+.wsdk-dark #PreviewTab .preview-content-panel code {
+    color: #ccd5dc;
+    background-color: #484c59;
+    border: 1px #1c1d20 solid;
+}
+.wsdk-dark #PreviewTab .preview-content-panel code {
+    border: none;
+}
+
+.wsdk-dark #PreviewTab .preview-content-panel a,
+.wsdk-dark #PreviewTab .preview-content-panel a:hover,
+.wsdk-dark #PreviewTab .preview-content-panel a:visited,
+.wsdk-dark #PreviewTab .preview-content-panel a:active {
+    color: #35c8ff
+}
+
+.wsdk-dark #PreviewTab .preview-panel {
+    background-color: #cfd4da;
+    color: #7e8c9f;
+}
+.wsdk-dark #PreviewTab #preview-default-toolbar {
+    width: 100%;
+    height: 29px;
+    border: 0;
+}
+.wsdk-dark #PreviewTab .toolbar-message {
+    padding: 7px;
+    height: 29px;
+    box-sizing: border-box;
+    position: static;
+    top:0;
+    left: 0;
+}
+

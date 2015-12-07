@@ -1,0 +1,695 @@
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wizard-samsung-author-key-store-new-layer .country-label,
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wizard-samsung-author-key-store-new-layer .state-label,
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wizard-samsung-author-key-store-new-layer .city-label,
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wizard-samsung-author-key-store-new-layer .organization-label,
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wizard-samsung-author-key-store-new-layer .department-label,
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wizard-samsung-author-key-store-new-layer .email-label,
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wizard-samsung-author-key-store-new-layer .name-label,
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wizard-samsung-author-key-store-new-layer .key-store-password-label,
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wizard-samsung-author-key-store-new-layer .key-store-password-confirm-label {
+    font-weight: bold;
+    width: 130px;
+    display: inline-block;
+    color:initial!important;
+}
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details {
+    background-color: rgba(212,219,226,1);
+    min-height: 250px;
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details-content-root {
+    height: 300px;
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .detail-pane button:hover {
+    background-color: rgba(162,183,212,1);
+    color: rgba(39,42,45,1);
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .detail-pane button:active {
+    background-color: rgba(66,76,91,1);
+    color: rgba(25,27,28,1);
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .detail-pane button:disabled {
+    /*background-color: rgba(116,130,150,1);*/
+    color: rgba(83,92,105,1);
+    cursor: default;
+    opacity: 0.5;
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .author-title,
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .device-profile-title,
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .title{
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 10px;
+    display: inline-block;
+    padding-left: 4px;
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .author-name-label,
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .author-name,
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .name-label,
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .name
+{
+    font-size: 12px;
+    color: rgba(109,109,109,1);
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .author-container hr,
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .device-profile-container hr,
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details hr
+{
+    background-color: rgba(175,180,187,1);
+    border: 0;
+    margin: 17px 0;
+    height: 1px;
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-config-icon {
+    width: 50px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: -20px -30px;
+    position: relative;
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-config-icon:after {
+    position: absolute;
+    content: 'Samsung';
+    top: 16px;
+    left: 3px;
+    font-size: 7px;
+    text-align: center;
+    color: #fff;
+    width: 42px;
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .author-container hr,
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .device-profile-container hr,
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details hr {
+    background-color: rgba(175,180,187,1);
+    border: 0;
+    margin: 17px 0;
+    height: 1px;
+}
+
+/* wizard pages */
+.wsdk-dark .wizard-samsung-author-key-store-new-layer .country-input {
+    text-transform: uppercase;
+}
+
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .device-profile-page .drop-zone {
+    position: relative;
+    height: 50px;
+    border: dashed 4px;
+}
+
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .device-profile-page .drop-zone .browse-button {
+    position: absolute;
+    right: 5px;
+    bottom: 4px;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    background-image: url('resource/wizard_browse.png');
+}
+
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .device-profile-page .file-input {
+    display: block !important;
+    width: 24px !important;
+    height: 24px !important;
+    opacity: 0 !important;
+    overflow: hidden !important;
+}
+
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .device-profile-page .dgrid {
+    height: 89px;
+    margin-top: 10px;
+}
+
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .device-profile-page .duid-grid .field-duid {
+    width: auto;
+    vertical-align: middle;
+}
+
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .device-profile-page .duid-grid .field-command {
+    width: 10px;
+}
+
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .device-profile-page .dgrid-cell {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: 20px;
+}
+
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .device-profile-page .device-icon,
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .device-icon {
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border-width: 0;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .device-profile-page .dgrid-cell.field-name {
+    width: 20%;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .device-profile-page .dgrid-cell.field-status {
+    width: 10%;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .device-profile-page .dgrid-cell.field-duid {
+    width: 40%;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .device-profile-page .dgrid-cell.field-type {
+    width: 10%;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .device-profile-page .dgrid-cell.field-model {
+    width: 20%;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .device-profile-page .duid-remove-button {
+    background-image: url('resource/package-samsung.png');
+    background-position: 0 0;
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .dgrid-cell .device-status-online,
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .device-profile-page .dgrid-cell .device-status-online {
+    background-image: url('resource/package-samsung.png');
+    background-position: -16px 0;
+    margin: 0 auto;
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .dgrid-cell .device-status-offline,
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .device-profile-page .dgrid-cell .device-status-offline {
+    background-image: url('resource/package-samsung.png');
+    background-position: -16px -16px;
+    margin: 0 auto;
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .dgrid-cell .device-type-wearable,
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .device-profile-page .dgrid-cell .device-type-wearable {
+    background-image: url('resource/package-samsung.png');
+    background-position: -32px -32px;
+    margin: 0 auto;
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .dgrid-cell .device-type-mobile,
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .device-profile-page .dgrid-cell .device-type-mobile {
+    background-image: url('resource/package-samsung.png');
+    background-position: -16px -32px;
+    margin: 0 auto;
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .dgrid-cell .device-type-tv,
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .device-profile-page .dgrid-cell .device-type-tv {
+    background-image: url('resource/package-samsung.png');
+    background-position: -32px 0;
+    margin: 0 auto;
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .dgrid-cell .device-type-unknown,
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .device-profile-page .dgrid-cell .device-type-unknown {
+    background-image: url('resource/package-samsung.png');
+    background-position: 0 -32px;
+    margin: 0 auto;
+}
+
+/* detail pane */
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .author-grid .dgrid{
+    height: 65px;
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .author-grid .field-key-store-password {
+    width: 128px;
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .device-profile-grid .dgrid {
+    height: 59px;
+    clear: both;
+    border: 0;
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .duid-grid .dgrid {
+    height: 90px;
+    border: 0;
+}
+
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wsdk-common-wizard-root .device-profile-page .import-button {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    border: 0;
+    color: #272a2d;
+    padding: 2px 8px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    background-color: rgba(147,167,195,1);
+    cursor: pointer;
+    margin-left: 5px;
+    box-shadow: none;
+    background-image: url('resource/spritesheet.png');
+    background-position: -786px -8px;
+    text-indent: -100px;
+    overflow: hidden;
+    width: 34px;
+    height: 26px;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wsdk-common-wizard-root .device-profile-page .import-button:hover {
+    background-color: rgba(162,183,212,1);
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wsdk-common-wizard-root .device-profile-page .import-button:active {
+    background-color: rgb(92, 106, 129);
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wizard-device-profile-new-layer {
+    padding: 15px 10px;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wizard-device-profile-new-layer .row {
+    padding: 10px 10px 4px 10px;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wizard-device-profile-new-layer .row input[type=text],
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wizard-device-profile-new-layer .row input[type=password] {
+    width: 300px;
+    height: 20px;
+    border: 1px #7e8897 solid;
+    color: rgba(82,87,92,1);
+    background: rgba(230,233,237,1);
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wizard-device-profile-new-layer .row .developer-type-select,
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wizard-device-profile-new-layer .row .privilege-level-select{
+    width: 304px;
+    height: 20px;
+    border: 1px #7e8897 solid;
+    color: rgba(82,87,92,1);
+    background: rgba(230,233,237,1);
+    padding: 0 5px;
+    box-sizing: border-box;
+
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wizard-device-profile-new-layer .name-label,
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wizard-device-profile-new-layer .password-label,
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wizard-device-profile-new-layer .confirm-label,
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wizard-device-profile-new-layer .developer-type-label,
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wizard-device-profile-new-layer .privilege-level-label {
+    font-weight: bold;
+    width: 130px;
+    display: inline-block;
+    color:initial!important;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wizard-device-profile-new-layer .duid-group {
+    padding: 10px 4px 4px 4px;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wizard-device-profile-new-layer .duid-group .duid-grid {
+    margin-top: 10px;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wizard-device-profile-new-layer .duid-group input[type=text] {
+    width: 438px;
+    height: 20px;
+    box-sizing: border-box;
+    border: 1px #7e8897 solid;
+    color: rgba(82,87,92,1);
+    background: rgba(230,233,237,1);
+    padding: 0 5px;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wizard-device-profile-new-layer .duid-group .duid-add-button {
+    border: 0;
+    color: #272a2d;
+    padding: 2px 4px 4px 4px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    background-color: rgba(147,167,195,1);
+    cursor: pointer;
+    margin-left: 5px;
+    box-shadow: none;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wizard-device-profile-new-layer .duid-group .duid-add-button:hover {
+    background-color: rgba(162,183,212,1);
+    color: rgba(39,42,45,1);
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wizard-device-profile-new-layer .duid-group .duid-add-button:active {
+    background-color: rgba(66,76,91,1);
+    color: rgba(25,27,28,1);
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wizard-device-profile-new-layer .duid-group .duid-add-button:disabled {
+    background-color: rgba(147,167,195,1);
+    color: rgba(83,92,105,1);
+    cursor: default;
+    opacity: 0.5;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wizard-device-profile-new-layer .duid-group .dgrid .dgrid-row {
+    background-color: #e8edf5;
+    border: 1px #7e8897 solid;
+    margin: 2px;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wizard-device-profile-new-layer .duid-group .dgrid .dgrid-content {
+    background-color: #cdd5dd;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wizard-device-profile-new-layer .most-recently-used {
+    color: rgba(50,90,142,1);
+    padding: 10px 5px 0 5px;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wizard-device-profile-new-layer .most-recently-used .label {
+    cursor: pointer;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wizard-device-profile-new-layer .most-recently-used .label:before {
+    content: '';
+    display: inline-block;
+    background-image: url('resource/spritesheet.png');
+    background-repeat: no-repeat;
+    background-position: -762px -50px;
+    cursor: pointer;
+    width: 28px;
+    height: 22px;
+    vertical-align: middle;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wizard-device-profile-new-layer .most-recently-used .label.active:before {
+    content: '';
+    display: inline-block;
+    background-image: url('resource/spritesheet.png');
+    background-repeat: no-repeat;
+    background-position: -790px -50px;
+    cursor: pointer;
+    width: 28px;
+    height: 22px;
+    vertical-align: middle;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wizard-device-profile-new-layer .most-recently-used .dgrid-header {
+    background-color: rgb(207, 215, 228);
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wizard-device-profile-new-layer .most-recently-used .dgrid-header .dgrid-cell {
+    border: 1px solid rgb(126, 136, 151);
+    text-align: center;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wizard-device-profile-new-layer .most-recently-used .dgrid-scroller {
+    margin-top: 0;
+    top: -1px;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .wizard-device-profile-new-layer .most-recently-used .dgrid-scroller .dgrid-cell {
+    border: 1px solid rgb(126, 136, 151);
+    padding: 4px 8px;
+    background-color: rgb(232, 237, 245);
+}
+
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .author-key-store-page .author-dark {
+    background-color: rgba(32,33,34,0.85);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .distributor-key-store-page .drop-zone .browse-button {
+    position: absolute;
+    bottom: 78px;
+    right: 45px;
+    border: 0;
+    color: #272a2d;
+    padding: 2px 8px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    background-color: rgba(147,167,195,1);
+    cursor: pointer;
+    margin-left: 5px;
+    box-shadow: none;
+    background-image: url('resource/spritesheet.png');
+    background-position: -732px -48px;
+    text-indent: -100px;
+    overflow: hidden;
+    width: 10px;
+    height: 20px;
+    cursor: pointer;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .author-key-store-page .browse-button {
+    position: absolute;
+    bottom: 90px;
+    right: 45px;
+    border: 0;
+    color: #272a2d;
+    padding: 2px 8px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    background-color: rgba(147,167,195,1);
+    cursor: pointer;
+    margin-left: 5px;
+    box-shadow: none;
+    background-image: url('resource/spritesheet.png');
+    background-position: -732px -48px;
+    text-indent: -100px;
+    overflow: hidden;
+    width: 10px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .device-profile-page input[type=file]::-webkit-file-upload-button {
+    cursor: pointer;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .device-profile-page .row {
+    padding: 10px 10px 4px 10px;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .device-profile-page .row:after{
+    display: block;
+    content: '';
+    clear: both;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .device-profile-page .close-button{
+    background: url("resource/dialogCloseIcon.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 2px;
+    right: 6px;
+    text-indent: -1000px;
+    overflow: hidden;
+    border: 0;
+    cursor: pointer;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .device-profile-page .drop-zone {
+    height: 100px;
+    border: dashed 1px rgba(79,85,94,1);
+    width: 460px;
+    margin: 27px auto 0 auto;
+    background: rgba(185,192,200,1);
+    color: rgba(153,167,188,1);
+    font-size: 15px;
+    text-align: center;
+    line-height: 100px;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .device-profile-page .drop-zone {
+    height: 90px;
+    border: dashed 1px rgba(126,136,151,1);
+    width: 460px;
+    margin: 27px auto 0 auto;
+    background: transparent;
+    color: rgba(153,167,188,1);
+    font-size: 15px;
+    text-align: center;
+    line-height: 90px;
+}
+
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .device-profile-page .drop-zone .drop-zone-label {
+    color: rgba(153,167,188,1);
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .device-profile-page .drop-zone .drop-zone-label.drop {
+    color: rgba(174,204,243,1);
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .device-profile-page .author-dark {
+    background-color: rgba(32,33,34,0.85);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .device-profile-page .drop-zone .browse-button {
+    position: absolute;
+    top: 60px;
+    right: 6px;
+    border: 0;
+    color: #272a2d;
+    padding: 2px 8px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    background-color: rgba(147,167,195,1);
+    cursor: pointer;
+    margin-left: 5px;
+    box-shadow: none;
+    background-image: url('resource/spritesheet.png');
+    background-position: -732px -48px;
+    text-indent: -100px;
+    overflow: hidden;
+    width: 10px;
+    height: 20px;
+    cursor: pointer;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .device-profile-page .browse-button:hover {
+    background-color: rgba(162,183,212,1);
+    color: rgba(39,42,45,1);
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .device-profile-page .browse-button:active {
+    background-color: rgba(147,167,195,1);
+    color: rgba(25,27,28,1);
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .device-profile-page .browse-button:disabled {
+    background-color: rgba(147,167,195,1);
+    color: rgba(83,92,105,1);
+    cursor: default;
+    opacity: 0.5;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .device-profile-page .author-dark .key-store-password-label {
+    font-weight: bold;
+    width: 130px;
+    display: inline-block;
+    color: rgba(222,222,222,1);
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .device-profile-page .author-dark .key-store-password-input {
+    width: 150px;
+    height: 20px;
+    border: 1px rgba(126,136,151,1) solid;
+    color: rgba(222,222,222,1);
+    background: rgba(91,96,102,1);
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+.wsdk-dark .wsdk-package-new-configuration-wizard-root .content .device-profile-page .author-dark .key-store-group {
+    float:left;
+    padding-left: 26px;
+}
+/* dialog tizen configuration details */
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .tizen-details-content-pane,
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details-content-pane {
+    overflow: auto;
+    width: 100%;
+    background-color: rgba(212,219,226,1);
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .dgrid-cell {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: 20px;
+}
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .dgrid-header .dgrid-cell {
+    background-color: rgba(226,234,241,1);
+    text-align: center;
+    color: rgba(54,57,60,1);
+    font-size: 11px;
+}
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .dgrid-content .dgrid-cell {
+    background-color: rgba(243,247,251,1);
+    text-align: center;
+    padding: 8px 3px;
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .dgrid-cell.field-device-duid {
+    width: 40%;
+}
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .dgrid-cell.field-device-status {
+    width: 10%;
+}
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .dgrid-cell.field-device-name {
+    width: 20%;
+}
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .dgrid-cell.field-device-type {
+    width: 10%;
+}
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .dgrid-cell.field-device-model {
+    width: 20%;
+}
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .dgrid-content .dgrid-cell:empty {
+    height: 30px;
+}
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .dgrid-header-scroll {
+    background-color: transparent!important;
+}
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .author-container .dgrid {
+    height: 65px;
+    clear: both;
+}
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .distributor-container .dgrid {
+    height: 90px;
+    clear: both;
+}
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .dgrid .field-key-store-password {
+    width: 128px;
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .divider {
+    height: 6px;
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .distributor-container .distributor-title{
+    padding-bottom: 10px;
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .author-title,
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .distributor-title {
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 10px;
+    display: inline-block;
+    padding-left: 4px;
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .author-name-label,
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .author-name,
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .distributor-name-label,
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .distributor-name {
+    font-size: 12px;
+    color: rgba(109,109,109,1);
+    padding-bottom: 20px;
+}
+
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .author-export-button,
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .distributor-export-button,
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .device-profile-export-button {
+    float: right;
+    background-image: url('resource/spritesheet.png');
+    background-repeat: no-repeat;
+    background-position: -762px -4px;
+    border: 0;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 5px;
+    text-indent: -100px;
+    overflow: hidden;
+    width: 28px;
+    height: 32px;
+}
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .author-export-button:hover,
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .distributor-export-button:hover,
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .device-profile-export-button:hover {
+    box-shadow: none;
+    background-color: transparent;
+}
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .author-container hr,
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .distributor-container hr,
+.wsdk-dark .wsdk-package-signing-configurations-dialog-root .samsung-details .device-profile-container hr{
+    background-color: rgba(175,180,187,1);
+    border: 0;
+    margin: 17px 0;
+    height: 1px;
+}
+.wsdk-dark fieldset.duid-group {
+    border: #A2A6AB 1px solid;
+    margin: 10px 6px 0 6px;
+}
+.wsdk-dark .duid-group legend {
+    font-weight: bold;
+}

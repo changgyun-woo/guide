@@ -1,0 +1,303 @@
+/*loading*/
+.app-loading-emblem {
+  position: absolute;
+  //margin: auto;
+  width: 72px;
+  height: 96px;
+  background: url("../images/loading_img.png") no-repeat;
+  left: 50%;
+  margin-left: -36px;
+  top: 50%;
+  margin-top: -35px;
+  /*left: -webkit-calc(50% - 36px);
+  left: -moz-calc(50% - 36px);
+  left: calc(50% - 36px);
+  top: -webkit-calc(50% - 35px);
+  top: -moz-calc(50% - 35px);
+  top: calc(50% - 35px);*/
+  z-index: 1;
+}
+
+/*gnb*/
+.app-workbench-top-logo {
+  position: absolute;
+  left: 12px;
+  top: 0px;
+  width: 40px;
+  height: 30px;
+  background-image: @gnb-logo;
+  cursor: pointer;
+}
+.app-workbench-top-logo:hover {
+  background-position: -40px;
+}
+.app-workbench-top-logo:active {
+  background-position: -80px;
+}
+.app-workbench-menubar {
+  background-image: none;
+  background-color: @gnb-background-color;
+}
+.app-workbench-top-userinfo span {
+  color: @gnb-user-text-color;
+}
+.dijitMenuBar {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+#editor-tab .dijitTabListWrapper {
+  left: 0 !important;
+}
+
+/*container*/
+#app-workbench-border-container {
+  background-color: @workspace-container-background-color;
+  border-radius: 0;
+}
+.app-workbench-middle-content {
+}
+
+/*workspace*/
+.viewToolbarBackground {
+  background-color: @workspace-TabPaneWrapper-button-area;
+  background-image: none;
+  height: 28px;
+  width: 100%;
+  overflow: hidden;
+  color: rgba(126, 140, 159, 1);
+}
+
+/*Dialog*/
+.dijitDialog .dijitBorderContainer-dijitContentPane {
+  background-color: transparent !important;
+  padding: 0;
+  border-radius: 0 !important;
+}
+.dijitDialog .dijitSplitterH, .dijitDialog .dijitGutterH {
+  background-color: transparent !important;
+}
+.dijitDialog .dijitBorderContainer {
+  padding: 0 !important;
+  //background-color: rgba(255,255,255,1);
+  border-radius: 0;
+}
+
+/*footer*/
+.app-workbench-statusbar {
+  height: 20px;
+  color: @footer-text-color;
+  background-color: @footer-background-color;
+  background-image: none;
+}
+.statusbar-content-separator {
+  float: left;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 19px;
+  width: 1px;
+  border-left: 1px rgba(0, 0, 0, 0.2) solid;
+  border-right: 1px rgba(137, 137, 137, 0.4) solid;
+}
+
+/*dgrid*/
+.dgrid-header {
+  background-color: #cfd7e4 !important;
+}
+.dgrid-header .dgrid-cell {
+  color: rgba(39, 42, 45, 1);
+  padding: 7px 3px;
+  border: 1px solid rgba(209, 208, 219, 1);
+  font-weight: bold;
+}
+
+/*git view*/
+.viewToolbarBtnRight {
+  background-position: -17px 50% !important;
+}
+.gv-toolbar {
+  background-image: none !important;
+}
+.viewToolbarBtn {
+  height: 29px;
+  width: 15px;
+  margin: 0 auto;
+  background-image: url("../images/icons/tabStripIcon.png") !important;
+  background-color: rgba(58, 62, 71, 1) !important;
+  border-radius: 2px;
+}
+.gv-contentbody-issue {
+  color: #ccc !important;
+  font-weight: normal !important;
+}
+.gv-contentbody-issue:hover {
+  color: #43caff !important;
+  background: none !important;
+}
+
+/*tab view*/
+#gitViewTab, .problems-view, .wsdk-device-view {
+  background-color: rgba(46, 49, 55, 1);
+  color: rgba(126, 140, 159, 1);
+  position: absolute;
+}
+
+#editor-tab .dijitBorderContainer-dijitContentPane {
+  background-color: rgba(0, 0, 0, 1);
+  padding-top: 3px !important;
+}
+.viewToolbarContent {
+  background-color: rgba(60, 64, 73, 1);
+  color: rgba(126, 140, 159, 1);
+}
+.gv-toolbar-statusbar {
+  color: rgba(126, 140, 159, 1) !important;
+  background-color: rgba(55, 58, 67, 1);
+  background-image: none !important;
+  margin-top: 1px;
+  border: 0 !important;
+  height: 30px !important;
+}
+.wsdk-device-view-toolbar {
+  color: rgba(126, 140, 159, 1) !important;
+  background-color: rgba(55, 58, 67, 1);
+  background-image: none !important;
+  border: 0 !important;
+}
+.wsdk-device-view-toolbar-notification {
+  line-height: 26px;
+  padding-left: 5px;
+}
+.gv-selectedpath {
+  color: rgba(126, 140, 159, 1) !important;
+}
+.gv-contents, .wsdk-device-view-content, .gv-contentbody, .gv-content {
+  background-color: transparent !important;
+  border: 0 !important;
+}
+.gv-contents a, .wsdk-device-view-content a, .gv-contentbody a, .gv-content a,
+.gv-contents a:hover, .wsdk-device-view-content a:hover, .gv-contentbody a:hover, .gv-content a:hover,
+.gv-contents a:visited, .wsdk-device-view-content a:visited, .gv-contentbody a:visited, .gv-content a:visited,
+.gv-contents a:active, .wsdk-device-view-content a:active, .gv-contentbody a:active, .gv-content a:active {
+  color: #35c8ff
+}
+.sunkenline {
+  background: url('../images/sunkenline_02.png') no-repeat !important;
+}
+.consoleViewContentContainer .console_message_item {
+  color: rgba(126, 140, 159, 1) !important;
+}
+.terminal-view .terminaljs {
+  background-color: rgba(46, 49, 55, 1) !important;
+}
+
+/*scroll*/
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-track {
+  right: 4px;
+  margin-right: 5px;
+  border: 2px solid transparent;
+  background: transparent;
+  /*
+  x-shadow: 0px 0px 3px #dfdfdf inset;
+  border-radius:10px;
+  */
+}
+::-webkit-scrollbar-track-piece {
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0);
+  /*
+  x-shadow: 0px 0px 3px #dfdfdf inset;
+  border-radius:10px;
+  */
+}
+::-webkit-scrollbar-thumb {
+  //background: rgba(255, 255, 255, 0.3);
+  background: #7d8b97;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7d8b97;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+/* workbench */
+#app-workbench {
+  min-width: 480px;
+}
+#app-workbench-top-userinfo #userinfoButton_label {
+  text-indent: -1000px;
+  overflow: hidden;
+}
+#app-workbench-top-userinfo.app-workbench-top-userinfo {
+  margin: 2px 4px 0 0;
+}
+
+/* codemirror */
+.CodeMirror .CodeMirror-scrollbar-filler {
+  background-color: transparent;
+}
+
+/* View */
+.view-badge .tabLabel {
+  position: relative;
+}
+.view-badge .tabLabel:after {
+  position: absolute;
+  top: 8px;
+  left: -8px;
+  content: '';
+  display: block;
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+  background-color: #43caff;
+}
+
+#workspaceView, #Output {position: absolute;}
+
+/*************** top tab ***************/
+#editor .dijitTabContainerTop-tabs .dijitTab {
+  background-color: rgba(35, 37, 43, 1);
+}
+#editor .dijitTabContainerTop-tabs .dijitTabChecked {
+  background-color: rgba(58, 62, 71, 1);
+  color: #fff;
+}
+#editor .dijitTabContainerTop-tabs .dijitTabHover, #editor .dijitTabContainerTop-tabs .dijitTabActive {
+  color: #fff;
+}
+
+#editor .cm-s-webida-dark .CodeMirror-linenumber.CodeMirror-gutter-elt {
+  color: #35c8ff;
+}
+#editor .cm-s-webida-dark div.CodeMirror-gutter {
+  background: #27282c;
+}
+#editor .cm-s-webida-dark.CodeMirror {
+  background: #1a1b1c;
+  color: #d4e2fa;
+  border-top: 1px solid #3a3e47;
+}
+#editor .cm-s-webida-dark .CodeMirror-gutters {
+}
+#editor .cm-s-webida-dark .CodeMirror-activeline-background {
+  background: #394554;
+}
+
+/*common input*/
+.dijitDisabled .dijitPlaceHolder {
+  color: #C8CCD4;
+}

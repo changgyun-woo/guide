@@ -1,0 +1,201 @@
+.app-workbench-top-userinfo .userinfo__menu {
+    float: right;
+}
+
+.wsdk-tools-search-bar {
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.wsdk-tools-search-bar *,
+.wsdk-tools-search-bar *:after,
+.wsdk-tools-search-bar *:before {
+    box-sizing: border-box;
+}
+.wsdk-tools-search-bar:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.wsdk-tools-search-bar .column {
+    float: right;
+    position: relative;
+    padding: 2px;
+    width: 160px;
+}
+
+.wsdk-tools-search-bar .sb-search .bar {
+    position: relative;
+    width: 0;
+    min-width: 22px;
+    height: 22px;
+    float: right;
+    overflow: hidden;
+    transition: width 0.3s;
+    -webkit-backface-visibility: hidden;
+}
+
+.wsdk-tools-search-bar .sb-search .input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    outline: none;
+    background: #85c1e9;
+    width: 100%;
+    height: 22px;
+    margin: 0;
+    z-index: 10;
+    padding: 10px 20px 10px 10px;
+    color: #2c3e50;
+}
+.wsdk-tools-search-bar .sb-search .input::-webkit-input-placeholder {
+    color: #aed6f1;
+}
+.wsdk-tools-search-bar .sb-search .input::-moz-placeholder {
+    color: #aed6f1;
+}
+
+.wsdk-tools-search-bar .sb-search .icon,
+.wsdk-tools-search-bar .sb-search .submit {
+    width: 22px;
+    height: 22px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    line-height: 22px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.wsdk-tools-search-bar .sb-search .submit {
+    background: #fff;
+    opacity: 0;
+    color: transparent;
+    border: none;
+    outline: none;
+    z-index: -1;
+}
+
+.wsdk-tools-search-bar .sb-search .icon {
+    color: #fff;
+    background: #2585ab url('resource/search_16.png') no-repeat center;
+    z-index: 90;
+    speak: none;
+    text-transform: none;
+}
+
+/* Open state */
+.wsdk-tools-search-bar .sb-search .bar.open {
+    width: 100%;
+}
+/*
+.wsdk-tools-search-bar .sb-search .bar.open .icon {
+background: #3498db url('search_16.png') no-repeat center;
+color: #fff;
+z-index: 10;
+}
+*/
+.wsdk-tools-search-bar .sb-search .bar.open .submit {
+    z-index: 90;
+}
+
+.wsdk-tools-search-bar .sb-search .result:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 100%;
+    right: 15px;
+    border-width: 0 6px 6px 6px;
+    border-style: solid;
+    border-color: #424750 transparent;
+}
+
+.wsdk-tools-search-bar .sb-search .result:before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 100%;
+    right: 13px;
+    border-width: 0 8px 8px 8px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.1) transparent;
+}
+
+.wsdk-tools-search-bar .sb-search .result {
+    position: absolute;
+    top: 140%;
+    right: 0;
+    width: 320px;
+    max-height: 360px;
+    overflow-y: scroll;
+    padding: 4px 7px 7px 7px;
+    color: #c7c7c7;
+    background: #424750;
+    border: 1px solid rgba(0,0,0,0.17);
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    font-weight: normal;
+    transition: all 0.5s ease-in;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.wsdk-tools-search-bar .sb-search .result .label {
+    border-left: 6px solid;
+    padding-left: 6px;
+    color: #7e8c9f;
+}
+
+.wsdk-tools-search-bar .sb-search .result .dropdown {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 4px;
+    padding-left: 2px;
+}
+.wsdk-tools-search-bar .sb-search .result .dropdown li {
+    padding: 4px;
+    padding-left: 15px;
+    text-decoration: none;
+    border-left: 2px solid;
+    line-height: 100%;
+    color: #ccc;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+.wsdk-tools-search-bar .sb-search .result .dropdown li.sb-cursor {
+    color: #fff;
+    background-color: rgba(0,151,207,.4);
+}
+.wsdk-tools-search-bar .sb-search .result .dropdown li .wsdk-fileicon {
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.wsdk-tools-search-bar .sb-search .result .label.recents,
+.wsdk-tools-search-bar .sb-search .result .dropdown.recents li {
+    border-left-color: #f3b353;
+}
+.wsdk-tools-search-bar .sb-search .result .label.files,
+.wsdk-tools-search-bar .sb-search .result .dropdown.files li {
+    border-left-color: #4183c4;
+}
+.wsdk-tools-search-bar .sb-search .result .dropdown li .sb-highlight {
+    background-color: rgba(65,131,196,.4); /* rgba(243,179,83,.4); */
+}
+.wsdk-tools-search-bar .sb-search .result .dropdown li:hover {
+    color: #43caff;
+}
+.wsdk-tools-search-bar .sb-search .result.open {
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 10;
+}

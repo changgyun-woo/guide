@@ -1,0 +1,393 @@
+.wsdk-dark #gitViewTab {
+    box-sizing: border-box;
+    height: calc(100% - 8px)!important;
+}
+.wsdk-dark .gv-pannel {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.wsdk-dark .gv-toolbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height:29px;
+}
+
+.wsdk-dark .gv-toolbar-statusbar {
+    position: absolute;
+    top: 31px;
+    width: 100%;
+    height:29px;
+}
+
+.wsdk-dark .gv-selectedpath {
+    position: absolute;
+    top: 6px;
+    left: 5px;
+}
+
+.wsdk-dark .gv-contents {
+    word-wrap: break-word;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    height: calc(100% - 60px);
+    overflow: auto;
+    color: #7e8c9f;
+}
+
+.wsdk-dark .gv-content {
+    margin: 5px;
+    font-size: 10pt;
+    font-family: Courier, 'Courier New';
+}
+
+.wsdk-dark .gv-contentbody {
+    padding: 10px;
+}
+
+.wsdk-dark .gv-contentbody-issue:hover {
+    cursor: pointer;
+}
+
+.wsdk-dark .gv-title {
+    padding: 5px;
+}
+
+.wsdk-dark .gv-toolbar .gv-menu-container {
+    width: 100%;
+    height: 100%;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.wsdk-dark .gv-menuitem {
+    float: left;
+    margin : 4px 3px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.wsdk-dark .sunkenline {
+    float: left;
+    margin-right: 6px;
+    margin-top: 4px;
+    height: 20px;
+    width: 2px;
+}
+
+.wsdk-dark .disabled { cursor:  not-allowed!important; }
+
+/*git status*/
+.wsdk-dark .gitModified {position:absolute;width:16px;height:16px;background:url('resource/git_status_transparent.png') -80px 0 no-repeat;}
+.wsdk-dark .gitAdded {position:absolute;width:16px;height:16px;background:url('resource/git_status_transparent.png') -80px -60px no-repeat;}
+.wsdk-dark .gitRemoved {position:absolute;width:16px;height:16px;background:url('resource/git_status_transparent.png') -80px -40px no-repeat;}
+.wsdk-dark .gitChanged {position:absolute;width:16px;height:16px;background:url('resource/git_status_transparent.png') 0 -80px no-repeat;}
+.wsdk-dark .gitConflicted {position:absolute;width:16px;height:16px;background:url('resource/git_status_transparent.png') -20px -60px no-repeat;}
+.wsdk-dark .gitUntracked {position:absolute;width:16px;height:16px;background:url('resource/git_status_transparent.png') -40px -80px no-repeat;}
+.wsdk-dark .gitIgnored {position:absolute;width:16px;height:16px;background:url('resource/git_status_transparent.png') -40px -60px no-repeat;}
+.wsdk-dark .gitTracked {position:absolute;width:16px;height:16px;background:url('resource/git_status_transparent.png') -20px -80px no-repeat;}
+.wsdk-dark .gitMissing {position:absolute;width:16px;height:16px;background:url('resource/git_status_transparent.png') -60px -60px no-repeat;}
+.wsdk-dark .gitRepoTop {position:absolute;width:16px;height:16px;background:url('resource/git_status_transparent.png') -80px -20px no-repeat;}
+.wsdk-dark .gitSubmodule {position:absolute;width:16px;height:16px;background:url('resource/git_status_transparent.png') -100px -80px no-repeat;}
+
+.wsdk-dark .git-add { background: url('resource/git_add.png') no-repeat;}
+.wsdk-dark .git-add:hover { background: url('resource/git_add.png') -20px 0 no-repeat;}
+.wsdk-dark .git-add.disabled, .wsdk-dark .git-add.disabled:active { background: url('resource/git_add.png') -40px 0 no-repeat;}
+.wsdk-dark .git-add:active {background: url('resource/git_add.png') -60px 0 no-repeat; }
+
+.wsdk-dark .git-remove { background: url('resource/git_remove.png') no-repeat;}
+.wsdk-dark .git-remove:hover { background: url('resource/git_remove.png') -20px 0 no-repeat;}
+.wsdk-dark .git-remove.disabled, .wsdk-dark .git-remove.disabled:active { background: url('resource/git_remove.png') -40px 0 no-repeat;}
+.wsdk-dark .git-remove:active { background: url('resource/git_remove.png') -60px 0 no-repeat;}
+
+.wsdk-dark .git-untrack { background: url('resource/git_untrack.png') no-repeat;}
+.wsdk-dark .git-untrack:hover { background: url('resource/git_untrack.png') -20px 0 no-repeat;}
+.wsdk-dark .git-untrack.disabled, .wsdk-dark .git-untrack.disabled:active { background: url('resource/git_untrack.png') -40px 0 no-repeat;}
+.wsdk-dark .git-untrack:active {background: url('resource/git_untrack.png') -60px 0 no-repeat;}
+
+.wsdk-dark .git-commit { background: url('resource/git_commit.png') no-repeat;}
+.wsdk-dark .git-commit:hover { background: url('resource/git_commit.png') -20px 0 no-repeat;}
+.wsdk-dark .git-commit.disabled, .wsdk-dark .git-commit.disabled:active { background: url('resource/git_commit.png') -40px 0 no-repeat;}
+.wsdk-dark .git-commit:active { background: url('resource/git_commit.png') -60px 0 no-repeat;}
+
+.wsdk-dark .git-resettocommit { background: url('resource/git_resettocommit.png') no-repeat;}
+.wsdk-dark .git-resettocommit:hover { background: url('resource/git_resettocommit.png') -20px 0 no-repeat;}
+.wsdk-dark .git-resettocommit.disabled, .wsdk-dark .git-resettocommit.disabled:active { background: url('resource/git_resettocommit.png') -40px 0 no-repeat;}
+.wsdk-dark .git-resettocommit:active { background: url('resource/git_resettocommit.png') -60px 0 no-repeat;}
+
+.wsdk-dark .git-stash { background: url('resource/git_stash.png') no-repeat;}
+.wsdk-dark .git-stash:hover { background: url('resource/git_stash.png') -20px 0 no-repeat;}
+.wsdk-dark .git-stash.disabled, .wsdk-dark .git-stash.disabled:active { background: url('resource/git_stash.png') -40px 0 no-repeat;}
+.wsdk-dark .git-stash:active { background: url('resource/git_stash.png') -60px 0 no-repeat;}
+
+.wsdk-dark .git-unstash { background: url('resource/git_unstash.png') no-repeat;}
+.wsdk-dark .git-unstash:hover { background: url('resource/git_unstash.png') -20px 0 no-repeat;}
+.wsdk-dark .git-unstash.disabled, .wsdk-dark .git-unstash.disabled:active { background: url('resource/git_unstash.png') -40px 0 no-repeat;}
+.wsdk-dark .git-unstash:active { background: url('resource/git_unstash.png') -60px 0 no-repeat;}
+
+.wsdk-dark .git-revert { background: url('resource/git_checkoutfromstage.png') no-repeat;}
+.wsdk-dark .git-revert:hover { background: url('resource/git_checkoutfromstage.png') -20px 0 no-repeat;}
+.wsdk-dark .git-revert.disabled, .wsdk-dark .git-revert.disabled:active { background: url('resource/git_checkoutfromstage.png') -40px 0 no-repeat;}
+.wsdk-dark .git-revert:active { background: url('resource/git_checkoutfromstage.png') -60px 0 no-repeat;}
+
+.wsdk-dark .git-rebase { background: url('resource/git_rebase.png') no-repeat;}
+.wsdk-dark .git-rebase:hover { background: url('resource/git_rebase.png') -20px 0 no-repeat;}
+.wsdk-dark .git-rebase.disabled, .wsdk-dark .git-rebase.disabled:active { background: url('resource/git_rebase.png') -40px 0 no-repeat;}
+.wsdk-dark .git-rebase:active { background: url('resource/git_rebase.png') -60px 0 no-repeat;}
+
+.wsdk-dark .git-merge { background: url('resource/git_merge.png') no-repeat;}
+.wsdk-dark .git-merge:hover { background: url('resource/git_merge.png') -20px 0 no-repeat;}
+.wsdk-dark .git-merge.disabled, .wsdk-dark .git-merge.disabled:active { background: url('resource/git_merge.png') -40px 0 no-repeat;}
+.wsdk-dark .git-merge:active { background: url('resource/git_merge.png') -60px 0 no-repeat;}
+
+.wsdk-dark .git-branch { background: url('resource/git_branch.png') no-repeat;}
+.wsdk-dark .git-branch:hover { background: url('resource/git_branch.png') -20px 0 no-repeat;}
+.wsdk-dark .git-branch.disabled, .wsdk-dark .git-branch.disabled:active { background: url('resource/git_branch.png') -40px 0 no-repeat;}
+.wsdk-dark .git-branch:active { background: url('resource/git_branch.png') -60px 0 no-repeat;}
+
+.wsdk-dark .git-preference { background: url('resource/git_preference.png') no-repeat;}
+.wsdk-dark .git-preference:hover { background: url('resource/git_preference.png') -20px 0 no-repeat;}
+.wsdk-dark .git-preference.disabled, .wsdk-dark .git-preference.disabled:active { background: url('resource/git_preference.png') -40px 0 no-repeat;}
+.wsdk-dark .git-preference:active { background: url('resource/git_preference.png') -60px 0 no-repeat;}
+
+.wsdk-dark .git-history { background: url('resource/git_history.png') no-repeat;}
+.wsdk-dark .git-history:hover { background: url('resource/git_history.png') -20px 0 no-repeat;}
+.wsdk-dark .git-history.disabled, .wsdk-dark .git-history.disabled:active { background: url('resource/git_history.png') -40px 0 no-repeat;}
+.wsdk-dark .git-history:active { background: url('resource/git_history.png') -60px 0 no-repeat;}
+
+.wsdk-dark .git-status { background: url('resource/git_status.png') no-repeat;}
+.wsdk-dark .git-status:hover { background: url('resource/git_status.png') -20px 0 no-repeat;}
+.wsdk-dark .git-status.disabled, .wsdk-dark .git-status.disabled:active { background: url('resource/git_status.png') -40px 0 no-repeat;}
+.wsdk-dark .git-status:active { background: url('resource/git_status.png') -60px 0 no-repeat;}
+
+.wsdk-dark .git-repositoryhistory { background: url('resource/git_repositoryhistory.png') no-repeat;}
+.wsdk-dark .git-repositoryhistory:hover { background: url('resource/git_repositoryhistory.png') -20px 0 no-repeat;}
+.wsdk-dark .git-repositoryhistory.disabled, .wsdk-dark .git-repositoryhistory.disabled:active { background: url('resource/git_repositoryhistory.png') -40px 0 no-repeat;}
+.wsdk-dark .git-repositoryhistory:active { background: url('resource/git_repositoryhistory.png') -60px 0 no-repeat;}
+
+.wsdk-dark .git-compare { background: url('resource/git_compare.png') no-repeat;}
+.wsdk-dark .git-compare:hover { background: url('resource/git_compare.png') -20px 0 no-repeat;}
+.wsdk-dark .git-compare.disabled, .wsdk-dark .git-compare.disabled:active { background: url('resource/git_compare.png') -40px 0 no-repeat;}
+.wsdk-dark .git-compare:active { background: url('resource/git_compare.png') -60px 0 no-repeat;}
+
+.wsdk-dark .git-blame { background: url('resource/git_blame.png') no-repeat;}
+.wsdk-dark .git-blame:hover { background: url('resource/git_blame.png') -20px 0 no-repeat;}
+.wsdk-dark .git-blame.disabled, .wsdk-dark .git-blame.disabled:active { background: url('resource/git_blame.png') -40px 0 no-repeat;}
+.wsdk-dark .git-blame:active { background: url('resource/git_blame.png') -60px 0 no-repeat;}
+
+.wsdk-dark .git-push { background: url('resource/git_push.png') no-repeat;}
+.wsdk-dark .git-push:hover { background: url('resource/git_push.png') -20px 0 no-repeat;}
+.wsdk-dark .git-push.disabled, .wsdk-dark .git-push.disabled:active { background: url('resource/git_push.png') -40px 0 no-repeat;}
+.wsdk-dark .git-push:active { background: url('resource/git_push.png') -60px 0 no-repeat;}
+
+.wsdk-dark .git-fetch { background: url('resource/git_fetch.png') no-repeat;}
+.wsdk-dark .git-fetch:hover { background: url('resource/git_fetch.png') -20px 0 no-repeat;}
+.wsdk-dark .git-fetch.disabled, .wsdk-dark .git-fetch.disabled:active { background: url('resource/git_fetch.png') -40px 0 no-repeat;}
+.wsdk-dark .git-fetch:active { background: url('resource/git_fetch.png') -60px 0 no-repeat;}
+
+.wsdk-dark .git-pull { background: url('resource/git_pull.png') no-repeat;}
+.wsdk-dark .git-pull:hover { background: url('resource/git_pull.png') -20px 0 no-repeat;}
+.wsdk-dark .git-pull.disabled, .wsdk-dark .git-pull.disabled:active { background: url('resource/git_pull.png') -40px 0 no-repeat;}
+.wsdk-dark .git-pull:active { background: url('resource/git_pull.png') -60px 0 no-repeat;}
+
+.wsdk-dark .git-remote { background: url('resource/git_remote.png') no-repeat;}
+.wsdk-dark .git-remote:hover { background: url('resource/git_remote.png') -20px 0 no-repeat;}
+.wsdk-dark .git-remote.disabled, .wsdk-dark .git-remote.disabled:active { background: url('resource/git_remote.png') -40px 0 no-repeat;}
+.wsdk-dark .git-remote:active { background: url('resource/git_remote.png') -60px 0 no-repeat;}
+
+.wsdk-dark .git-clone { background: url('resource/git_clonefromurl.png') no-repeat;}
+.wsdk-dark .git-clone:hover { background: url('resource/git_clonefromurl.png') -20px 0 no-repeat;}
+.wsdk-dark .git-clone.disabled, .wsdk-dark .git-clone.disabled:active { background: url('resource/git_clonefromurl.png') -40px 0 no-repeat;}
+.wsdk-dark .git-clone:active { background: url('resource/git_clonefromurl.png') -60px 0 no-repeat;}
+
+.wsdk-dark .git-createrepo { background: url('resource/git_creativegitrepository.png') no-repeat;}
+.wsdk-dark .git-createrepo:hover { background: url('resource/git_creativegitrepository.png') -20px 0 no-repeat;}
+.wsdk-dark .git-createrepo.disabled, .wsdk-dark .git-createrepo.disabled:active { background: url('resource/git_creativegitrepository.png') -40px 0 no-repeat;}
+.wsdk-dark .git-createrepo:active { background: url('resource/git_creativegitrepository.png') -60px 0 no-repeat;}
+
+.wsdk-dark .git-submodule { background: url('resource/git_updatesubmodules.png') no-repeat;}
+.wsdk-dark .git-submodule:hover { background: url('resource/git_updatesubmodules.png') -20px 0 no-repeat;}
+.wsdk-dark .git-submodule.disabled, .wsdk-dark .git-submodule.disabled:active { background: url('resource/git_updatesubmodules.png') -40px 0 no-repeat;}
+.wsdk-dark .git-submodule:active { background: url('resource/git_updatesubmodules.png') -60px 0 no-repeat;}
+
+/*
+theme*/
+
+/* git compare sytle */
+.wsdk-dark #GitHistoryDiffInfo .GitHitoryGreen {background-color: #ddffdd;}
+.wsdk-dark #GitHistoryDiffInfo .GitHitoryRed {background-color: #ffdddd;}
+.wsdk-dark #GitHistoryDiffInfo span.cm-meta {color: #a0b !important;}
+.wsdk-dark #GitHistoryDiffInfo span.cm-error { background-color: black; opacity: 0.4;}
+.wsdk-dark #GitHistoryDiffInfo span.cm-error.cm-string { background-color: red; }
+.wsdk-dark #GitHistoryDiffInfo span.cm-error.cm-tag { background-color: #2b2; }
+
+/* git style */
+.wsdk-dark .gitViewTab {
+    border-bottom: #c1c8cf solid 1px;
+    border-left: #c1c8cf solid 1px;
+    border-right: #c1c8cf solid 1px;
+}
+.wsdk-dark .gv-pannel {
+    border: 0;
+}
+.wsdk-dark .gv-toolbar {
+    border-top: 0;
+    background-color: transparent;
+}
+.wsdk-dark .gv-toolbar-statusbar {
+    border-top: 0;
+    background-color: #e1e6ec;
+}
+.wsdk-dark .gv-selectedpath {
+    font-weight: bold;
+    color: #494949;
+}
+.wsdk-dark .gv-contents {
+    background-color: #fafaff;
+}
+.wsdk-dark .gv-content {
+    border: 1px solid #d0deec;
+}
+.wsdk-dark .gv-contentbody {
+    background-color: #fff;
+}
+.wsdk-dark .gv-contentbody-issue {
+    color: #0060ff;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.wsdk-dark .gv-contentbody-message {
+    color: red;
+    font-weight: bold;
+}
+.wsdk-dark .gv-contentbody-issue:hover {
+    background-color: #bcedff;
+}
+.wsdk-dark .gv-title {
+    color: #fff;
+}
+.wsdk-dark .gv-title.gv-success {
+    background-color: #51a351;
+}
+.wsdk-dark .gv-title.gv-error {
+    background-color:#bd362f;
+}
+.wsdk-dark .gv-title.gv-info {
+    background-color: #2f96b4;
+}
+.wsdk-dark .gv-title.gv-warning {
+    background-color: #f89406;
+}
+.wsdk-dark .sunkenline {
+    background: url('resource/sunkenline_02.png') no-repeat;
+}
+.wsdk-dark .gv-menuitem {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+
+.wsdk-dark #gitViewTab .dijitButton .dijitButtonNode,
+.wsdk-dark #gitViewTab .dijitDropDownButton .dijitButtonNode,
+.wsdk-dark #gitViewTab .dijitComboButton .dijitButtonNode,
+.wsdk-dark #gitViewTab .dijitToggleButton .dijitButtonNode {
+    color: #fff;
+    background-color: #778393;
+}
+/* hover status */
+.wsdk-dark #gitViewTab .dijitButtonHover .dijitButtonNode,
+.wsdk-dark #gitViewTab .dijitDropDownButtonHover .dijitButtonNode,
+.wsdk-dark #gitViewTab .dijitComboButton .dijitButtonNodeHover,
+.wsdk-dark #gitViewTab .dijitComboButton .dijitDownArrowButtonHover,
+.wsdk-dark #gitViewTab .dijitToggleButtonHover .dijitButtonNode {
+    color: #fff;
+    background-color: #626c7a;
+}
+
+/* active, checked status */
+.wsdk-dark #gitViewTab .dijitButtonActive .dijitButtonNode,
+.wsdk-dark #gitViewTab .dijitDropDownButtonActive .dijitButtonNode,
+.wsdk-dark #gitViewTab .dijitComboButtonActive .dijitButtonNode,
+.wsdk-dark #gitViewTab .dijitToggleButtonActive .dijitButtonNode,
+.wsdk-dark #gitViewTab .dijitToggleButtonChecked .dijitButtonNode {
+    color: #fff;
+    background-color: #626c7a;
+}
+
+.wsdk-dark #GitHistoryTabContainer .dijitTabListContainer-top {
+    display: none;
+}
+.wsdk-dark #GitHistoryInfo {
+    border: 1px solid #7e8897;
+    box-sizing: border-box;
+}
+.wsdk-dark #GitResetCommitGrid ~ fieldset {
+    margin-top: 10px;
+}
+.wsdk-dark #GitBranchTree .dijitTreeRow,
+.wsdk-dark #GitBranchTree .dijitTreeNode .dojoDndItemBefore,
+.wsdk-dark #GitBranchTree .dijitTreeNode .dojoDndItemAfter {
+    /* so insert line shows up on IE when dropping after a target element */
+    padding: 4px 0 2px 0;
+    background-color: transparent;
+    background-color: rgba(171, 214, 255, 0);
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    border: solid 0 transparent;
+    color: #ccd5dc;
+    -webkit-transition-property: background-color, border-color;
+    -moz-transition-property: background-color, border-color;
+    transition-property: background-color, border-color;
+    -webkit-transition-duration: 0.25s;
+    -moz-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.wsdk-dark #GitBranchTree .dijitTreeRowSelected {
+    background-color: #3b8dc3;
+    border-color: transparent;
+    background-image: none;
+    padding: 3px 0 1px;
+    border-width: 1px 0;
+    color: #000000;
+    -webkit-transition-duration: 0.25s;
+    -moz-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+}
+.wsdk-dark #GitBranchTree .dijitTreeRowHover {
+    background-color: #c4c9dd;
+    border-color: transparent;
+    background-image: none;
+    padding: 3px 0 1px;
+    border-width: 1px 0;
+    color: #ccd5dc;
+    -webkit-transition-duration: 0.25s;
+    -moz-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+}
+.wsdk-dark #GitBranchTree .dijitTreeRowActive {
+    background-color: #3b8dc3;
+    border-color: transparent;
+    background-image: none;
+    padding: 3px 0 1px;
+    border-width: 1px 0;
+    color: #000000;
+    -webkit-transition-duration: 0.25s;
+    -moz-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+}
+.wsdk-dark #GitBranchTree .dijitTreeRowFocused {
+    background-repeat: repeat;
+}
+.wsdk-dark #GitBranchTree .dijitTreeRow.focused {
+    border: 1px #759dc0 solid;
+    padding: 3px 0 1px;
+}

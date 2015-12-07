@@ -1,0 +1,41 @@
+.wsdk-fileicon {
+  width: 16px;
+  height: 16px;
+}
+.wsdk-fileicon.css {
+  background: url('resource/fileicon_css.png') 0 0 no-repeat;
+}
+.wsdk-fileicon.less {
+  background: url('resource/fileicon_less.png') 0 0 no-repeat;
+}
+.wsdk-fileicon.scss {
+  background: url('resource/fileicon_scss.png') 0 0 no-repeat;
+}
+/* It might needs to override 'codeEditorHtmlFileIcon' class set by 'webida.editor.code-editor' because plug-ins are loaded asynchronously. */
+.wsdk-fileicon.html {
+  background: url('resource/fileicon_html.png') 0 0 no-repeat;
+}
+.wsdk-fileicon.js {
+  background: url('resource/fileicon_js.png') 0 0 no-repeat;
+}
+.wsdk-fileicon.json {
+  background: url('resource/fileicon_json.png') 0 0 no-repeat;
+}
+.wsdk-fileicon.md {
+  background: url('resource/fileicon_md.png') 0 0 no-repeat;
+}
+.wsdk-fileicon.xml {
+  background: url('resource/fileicon_xml.png') 0 0 no-repeat;
+}
+.wsdk-fileicon.png {
+  background: url('resource/fileicon_image.png') 0 0 no-repeat;
+}
+.wsdk-fileicon.jpg {
+  background: url('resource/fileicon_image.png') 0 0 no-repeat;
+}
+.wsdk-fileicon.jpeg {
+  background: url('resource/fileicon_image.png') 0 0 no-repeat;
+}
+.wsdk-fileicon.gif {
+  background: url('resource/fileicon_image.png') 0 0 no-repeat;
+}

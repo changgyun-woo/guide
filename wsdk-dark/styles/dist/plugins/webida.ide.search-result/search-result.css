@@ -1,0 +1,59 @@
+.wsdk-dark .search-result-view {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.wsdk-dark .search-result-contents {
+    background-color: #cfd4da;
+    border: 0;
+}
+
+.wsdk-dark .search-result-toolbar-panel {
+    width: 100%;
+    height: auto;
+    padding: 4px 0;
+    box-sizing: border-box;
+    background-color: #3c4049;
+    color: #7e8c9f;
+}
+.wsdk-dark .search-result-tree-panel {
+    background-color: transparent;
+    color: #7e8c9f;
+    padding: 10px;
+    height: calc(100% - 63px);
+}
+
+.wsdk-dark .search-result-view .dijitButton .dijitButtonNode,
+.wsdk-dark .search-result-view .dijitDropDownButton .dijitButtonNode,
+.wsdk-dark .search-result-view .dijitComboButton .dijitButtonNode,
+.wsdk-dark .search-result-view .dijitToggleButton .dijitButtonNode {
+    color: #fff;
+    background-color: #778393;
+}
+/* hover status */
+.wsdk-dark .search-result-view .dijitButtonHover .dijitButtonNode,
+.wsdk-dark .search-result-view .dijitDropDownButtonHover .dijitButtonNode,
+.wsdk-dark .search-result-view .dijitComboButton .dijitButtonNodeHover,
+.wsdk-dark .search-result-view .dijitComboButton .dijitDownArrowButtonHover,
+.wsdk-dark .search-result-view .dijitToggleButtonHover .dijitButtonNode {
+    color: #fff;
+    background-color: #626c7a;
+}
+
+/* active, checked status */
+.wsdk-dark .search-result-view .dijitButtonActive .dijitButtonNode,
+.wsdk-dark .search-result-view .dijitDropDownButtonActive .dijitButtonNode,
+.wsdk-dark .search-result-view .dijitComboButtonActive .dijitButtonNode,
+.wsdk-dark .search-result-view .dijitToggleButtonActive .dijitButtonNode,
+.wsdk-dark .search-result-view .dijitToggleButtonChecked .dijitButtonNode {
+    color: #fff;
+    background-color: #626c7a;
+}
+
+.wsdk-dark .search-result-view .search-result-toolbar-panel .dijitTextBox  {
+    border: 1px rgba(126,136,151,1) solid;
+    color: rgba(222,222,222,1);
+    background: rgba(91,96,102,1);
+
+}

@@ -1,0 +1,84 @@
+.wsdk-common-wizard-root {
+    min-height: 40px;
+    min-width: 100px;
+}
+
+.wsdk-common-wizard-root .content {
+    position: relative;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.wsdk-common-wizard-root .button {
+    position: relative;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+.wsdk-common-wizard-root .button .right {
+    float: right;
+}
+
+.wsdk-common-wizard-root .button .left {
+    float: left;
+}
+
+.wsdk-common-wizard-root .button button {
+    cursor: pointer;
+}
+
+.wsdk-common-wizard-root .button button:disabled {
+    cursor: default;
+}
+
+.wsdk-common-wizard-root .indicator {
+    position: relative;
+    width: 100%;
+    display: inline-flex;
+    margin-top: 5px;
+}
+
+.wsdk-common-wizard-root .indicator div {
+    display: inline-block;
+    height: 30px;
+    width: 100%;
+    line-height: 30px;
+    vertical-align: middle;
+    text-align: center;
+    text-overflow: ellipsis;
+    background-color: #dddddd;
+}
+.wsdk-common-wizard-root .indicator div:after {
+    display: block;
+    clear: both;
+    content: '';
+}
+.wsdk-common-wizard-root .indicator div span {
+    cursor: default;
+}
+
+.wsdk-common-wizard-root .indicator .active {
+    background-color: #eeeeee;
+}
+
+.wsdk-common-wizard-root .progress[value] {
+    appearance: none;
+    width: 100%; height: 20px;
+    background-color: #6b829f;
+    border: 1px #526985 solid;
+    position: relative;
+}
+.wsdk-common-wizard-root .progress[value]::-webkit-progress-bar {
+    background-color: #6b829f;
+}
+.wsdk-common-wizard-root .progress[value]::-webkit-progress-value {
+    background-color: #5abbff;
+}
+.wsdk-common-wizard-root .progress[value]::-moz-progress-bar {
+    background-color: #6b829f;
+}
+
+
+
+
+

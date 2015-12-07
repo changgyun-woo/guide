@@ -1,0 +1,35 @@
+.wsdk-dark .app-workbench-toolbar img.webida-tool-bar-icon {
+    text-indent: -1000px;
+    overflow: hidden;
+}
+.wsdk-dark .app-workbench-toolbar .__File__New__File_wticons {
+    background-image: url("resource/toolbar_file.png")!important;
+}
+.wsdk-dark .app-workbench-toolbar .__File__Save_wticons {
+    background-image: url("resource/toolbar_save.png")!important;
+}
+.wsdk-dark .app-workbench-toolbar .__File__Save_All_wticons {
+    background-image: url("resource/toolbar_saveall.png")!important;
+}
+.wsdk-dark .app-workbench-toolbar .__Find__Find_in_Files_wticons {
+    background-image: url("resource/toolbar_findfiles.png")!important;;
+}
+.wsdk-dark .app-workbench-toolbar .__Navigate__Go_to_File_wticons {
+    background-image: url("resource/toolbar_gotofile.png")!important;
+}
+.wsdk-dark .app-workbench-toolbar .__Help__Shortcut_List_wticons {
+    background-image: url("resource/toolbar_shortcuts.png")!important;
+}
+.wsdk-dark .app-workbench-toolbar .__Help__Command_List_wticons {
+    background-image: url("resource/toolbar_command.png")!important;
+}
+.wsdk-dark .app-workbench-toolbar .__Help__Preferences_wticons {
+    background-image: url("resource/toolbar_preference.png")!important;
+}
+.wsdk-dark .app-workbench-toolbar .__Project__Run_with_wticons {
+    background-image: url("resource/toolbar_runhistory.png")!important;
+}
+.wsdk-dark .app-workbench-toolbar .__Project__Debug_with_wticons {
+    background-image: url("resource/toolbar_debug.png")!important;
+}
+

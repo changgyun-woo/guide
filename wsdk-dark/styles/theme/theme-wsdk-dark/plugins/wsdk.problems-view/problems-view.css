@@ -1,0 +1,30 @@
+.wsdk-dark .problems-view .dgrid-cell {
+    text-overflow: hidden;
+    white-space: nowrap;
+}
+.wsdk-dark .problems-view .field-desc {
+    width: 40%;
+}
+.wsdk-dark .problems-view-grid .dgrid-header-scroll {
+    background-color: transparent!important
+}
+.wsdk-dark .problems-view-grid .dgrid-header-row .dgrid-cell {
+    text-align: center;
+    background-color: #626c7e;
+    border: 1px #3d434b solid;
+    color:#212325;
+}
+.wsdk-dark .problems-view-grid .dgrid-content .dgrid-cell {
+    color:#212325;
+    padding: 5px 10px 5px 10px;
+    border-bottom: 1px #000 solid;
+    border-left: 1px #000 solid;
+    border-right: 1px #000 solid;
+    border-top: 0;
+}
+.wsdk-dark .problems-view-grid .dgrid-content .dgrid-row {
+    background-color: #778294;
+}
+.wsdk-dark .problems-view-grid .dgrid-content .dgrid-row.dgrid-selected {
+    background-color: #96A4B9;
+}

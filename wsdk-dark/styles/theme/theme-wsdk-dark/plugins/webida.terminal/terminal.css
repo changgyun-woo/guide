@@ -1,0 +1,17 @@
+.wsdk-dark .terminal-view {
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+    font-family: Courier, monospace;
+    display: inline-block;
+    border: 0;
+    padding: 10px;
+    background-color: #000;
+    color: rgba(126, 140, 159, 1);
+}
+.wsdk-dark .terminal-view .terminal {
+    background-color: transparent!important;
+}
+.wsdk-dark .terminal-view .terminal .terminal-cursor {
+    background: green;
+}

@@ -1,0 +1,1267 @@
+.wsdk-dark .wsdk-manifest-editor-ui-container {
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    padding: 0px;
+    position: absolute;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-pane {
+    width: 100%;
+    height: 100%;
+    background-color: #4f5561;
+    box-sizing: border-box;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-pane .minlayout {
+    padding: 10px 20px;
+    min-width: 960px;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-control-pane,
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-network-pane {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0;
+    margin-top: 10px;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-control-pane {
+    padding-left: 5px;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-network-pane {
+    padding-right: 5px;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-advanced-pane {
+    clear: both;
+    padding:0
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-feature-pane,
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-privilege-pane {
+    width: 50%;
+    margin-top: 10px;
+    overflow: hidden;
+    float: left;
+    box-sizing: border-box;
+    padding: 0;
+    position: relative;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-feature-pane {
+    padding-right: 5px;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-privilege-pane {
+    padding-left: 5px;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-network-pane .dgrid-scroller,
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-control-pane .dgrid-scroller {
+    height:120px
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-network-pane .dgrid-scroller .dgrid-selected,
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-control-pane .dgrid-scroller .dgrid-selected {
+    background-color: transparent;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-control-pane .ui-content-control-header-pane,
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-network-pane .ui-content-network-header-pane,
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-feature-pane .ui-content-feature-header-pane,
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-privilege-pane .ui-content-privilege-header-pane {
+    background: #484e58;
+    font-weight: bold;
+    border-top: 1px #000 solid;
+    border-left: 1px #000 solid;
+    border-right: 1px #000 solid;
+    line-height: 20px;
+    padding: 0;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-control-pane .ui-content-control-header-pane label,
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-network-pane .ui-content-network-header-pane label,
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-feature-pane .ui-content-feature-header-pane label,
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-privilege-pane .ui-content-privilege-header-pane label {
+    padding: 4px;
+    display: inline-block;
+    color: #fff;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-feature-pane .ui-content-feature-header-pane .notify {
+    color: #f0ad4e;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-feature-pane .ui-content-feature-header-pane .feature-item-select-pane {
+    background-color: #323841;
+    padding: 4px 10px;
+    position: absolute;
+    top: 29px;
+    left: 1px;
+    width: calc(100% - 7px);
+    z-index: 10;
+    box-sizing: border-box;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-privilege-pane .ui-content-privilege-header-pane .privilege-item-select-pane {
+    background-color: #323841;
+    padding: 4px 10px;
+    position: absolute;
+    top: 29px;
+    left: 6px;
+    width: calc(100% - 7px);
+    z-index: 10;
+    box-sizing: border-box;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .feature-item-list,
+.wsdk-dark .wsdk-manifest-editor-ui-container .privilege-item-list {
+    background: #292d38;
+    border-color: #000;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .dijitTextBoxFocused .dijitInputContainer {
+    background: transparent;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .feature-item-list .dijitInputInner,
+.wsdk-dark .wsdk-manifest-editor-ui-container .privilege-item-list .dijitInputInner {
+    color: #7b8390;
+    font-weight: normal;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .feature-add-button,
+.wsdk-dark .wsdk-manifest-editor-ui-container .privilege-add-button,
+.wsdk-dark .wsdk-manifest-editor-ui-container .network-add-button,
+.wsdk-dark .wsdk-manifest-editor-ui-container .control-add-button {
+    float: right;
+    background: url('resource/icon_run_add_w.png') no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .feature-item-icon,
+.wsdk-dark .wsdk-manifest-editor-ui-container .privilege-item-icon {
+    width: 16px!important;
+    height: 16px!important;
+    background-image: url('resource/manifest_list_icons.png')!important;
+    margin-right: 5px;
+    background-position: 16px 16px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_alarm {
+    background-position: -31px -5px;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_application_info {
+    background-position: -57px -5px;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_application_launch {
+    background-position: -83px -5px;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_appmanager_certificate {
+    background-position: -109px -5px;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_appmanager_kill {
+    background-position: -135px -5px;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons-account,
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_account,
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_account_read,
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_account_write {
+    background-position: -5px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_archive {
+    background-position: -161px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_shell_appwidget {
+    background-position: -1721px -5px;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_shell {
+    background-position: -1695px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_speech_synthesis{
+    background-position: -1747px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_system_setting,
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_setting,
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_systemsetting {
+    background-position: -1773px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_systemsetting_home_screen {
+    background-position: -1799px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_systemsetting_incoming_call {
+    background-position: -1825px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_unlimitedstorage {
+    background-position: -1903px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_volume_set {
+    background-position: -1929px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_systemsetting_lock_screen {
+    background-position: -1851px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_systemsetting_notification_email {
+    background-position: -1877px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_web_service {
+    background-position: -1955px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_websetting {
+    background-position: -1981px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_bookmark,
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_bookmark_read,
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_bookmark_write {
+    background-position: -187px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_calendar,
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_calendar_read,
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_calendar_write {
+    background-position: -213px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_camera {
+    background-position: -239px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_callhistory_read,
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_callhistory_write,
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_call,
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_contact,
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_contact_read,
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_contact_write {
+    background-position: -265px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_datacontrol,
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_datacontrol_consumer {
+    background-position: -291px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_datasync {
+    background-position: -317px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_download {
+    background-position: -343px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_email {
+    background-position: -369px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_exif {
+    background-position: -395px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_filesystem_read {
+    background-position: -421px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_filesystem_write {
+    background-position: -447px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_fmradio {
+    background-position: -473px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_humanactivitymonitor {
+    background-position: -525px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_location {
+    background-position: -629px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_location_batch {
+    background-position: -655px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_content_read,
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_content_write {
+    background-position: -161px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_ime {
+    background-position: -551px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_location_gps {
+    background-position: -681px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .mediacontroller_client {
+    background-position: -759px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .mediacontroller_server {
+    background-position: -785px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_audiorecorder,
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_media_audio_recording {
+    background-position: -707px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_mediacapture {
+    background-position: -733px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_media_image_capture {
+    background-position: -811px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_messaging_read {
+    background-position: -863px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_messaging_write {
+    background-position: -889px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_media_video_recording {
+    background-position: -837px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_microphone {
+    background-position: -941px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_bluetoothmanager,
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_bluetooth_gap,
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_bluetooth_admin,
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_bluetooth_spp,
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_network_bluetooth {
+    background-position: -967px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_network_bluetooth_audio_media {
+    background-position: -993px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_bluetooth_health,
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_network_bluetooth_health {
+    background-position: -1019px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_healthinfo {
+    background-position: -499px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_internet,
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_network_internet {
+    background-position: -1045px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_nfc_common,
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_nfc_p2p,
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_nfc_tag,
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_nfc_admin {
+    background-position: -1071px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_network_nfc {
+    background-position: -1071px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_nfc_cardemulation,
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_network_nfc_card_emulation {
+    background-position: -1097px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_push {
+    background-position: -1123px -5px;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_network_push {
+    background-position: -1123px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_secureelement {
+    background-position: -1409px -5px;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_network_secure_element {
+    background-position: -1149px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_network_telephony,
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_telephony {
+    background-position: -1175px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_network_telephony_mms {
+    background-position: -1201px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_keymanager {
+    background-position: -577px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_led {
+    background-position: -603px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_network_wifi {
+    background-position: -1227px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_notification {
+    background-position: -1253px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_fullscreen,
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_screen_size_all,
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_screen_size_normal,
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_screen_size_normal_240_400,
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_screen_size_normal_320_320,
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_screen_size_normal_320_480,
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_screen_size_normal_360_480,
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_screen_size_normal_480_800,
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_screen_size_normal_540_960,
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_screen_size_normal_600_1024,
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_screen_size_normal_720_1280,
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_screen_size_normal_1080_1920 {
+    background-position: -1383px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_sensor_accelerometer {
+    background-position: -1435px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_sensor_barometer {
+    background-position: -1461px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_sensor_gyroscope {
+    background-position: -1487px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_sensor_heartrate,
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_sensor_heart_rate_monitor {
+    background-position: -1513px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_sensor_magnetometer {
+    background-position: -1539px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_sensor_photometer {
+    background-position: -1591px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_package,
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_package_info {
+    background-position: -1279px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_packagemanager,
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_packagemanager_install {
+    background-position: -1305px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_sensor_pedometer {
+    background-position: -1565px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_power {
+    background-position: -1331px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_sensor_proximity {
+    background-position: -1617px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_sensor_ultraviolet {
+    background-position: -1643px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icons_sensor_wrist_up {
+    background-position: -1669px -5px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .feature-item-remove-button,
+.wsdk-dark .wsdk-manifest-editor-ui-container .privilege-item-remove-button {
+    float: right;
+    background: url('resource/icon_run_del.png') no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .field-id > .dijitButton {
+    background: url('resource/icon_run_del.png') no-repeat;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .feature-item-cancel-button,
+.wsdk-dark .wsdk-manifest-editor-ui-container .privilege-item-cancel-button {
+    background: url('resource/icon_delete.png') no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .feature-item-add-button,
+.wsdk-dark .wsdk-manifest-editor-ui-container .privilege-item-add-button {
+    background: url('resource/icon_security_use.png') no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .feature-add-button.dijitButtonHover,
+.wsdk-dark .wsdk-manifest-editor-ui-container .privilege-add-button.dijitButtonHover,
+.wsdk-dark .wsdk-manifest-editor-ui-container .network-add-button.dijitButtonHover,
+.wsdk-dark .wsdk-manifest-editor-ui-container .control-add-button.dijitButtonHover,
+.wsdk-dark .wsdk-manifest-editor-ui-container .feature-item-remove-button.dijitButtonHover,
+.wsdk-dark .wsdk-manifest-editor-ui-container .privilege-item-remove-button.dijitButtonHover,
+.wsdk-dark .wsdk-manifest-editor-ui-container .feature-item-add-button.dijitButtonHover,
+.wsdk-dark .wsdk-manifest-editor-ui-container .privilege-item-add-button.dijitButtonHover,
+.wsdk-dark .wsdk-manifest-editor-ui-container .feature-item-cancel-button.dijitButtonHover,
+.wsdk-dark .wsdk-manifest-editor-ui-container .privilege-item-cancel-button.dijitButtonHover,
+.wsdk-dark .wsdk-manifest-editor-ui-container .field-id > .dijitButton.dijitButtonHover {
+    background-position: -20px 0;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .feature-add-button.dijitButtonActive,
+.wsdk-dark .wsdk-manifest-editor-ui-container .privilege-add-button.dijitButtonActive,
+.wsdk-dark .wsdk-manifest-editor-ui-container .network-add-button.dijitButtonActive,
+.wsdk-dark .wsdk-manifest-editor-ui-container .control-add-button.dijitButtonActive,
+.wsdk-dark .wsdk-manifest-editor-ui-container .feature-item-remove-button.dijitButtonActive,
+.wsdk-dark .wsdk-manifest-editor-ui-container .privilege-item-remove-button.dijitButtonActive,
+.wsdk-dark .wsdk-manifest-editor-ui-container .feature-item-add-button.dijitButtonActive,
+.wsdk-dark .wsdk-manifest-editor-ui-container .privilege-item-add-button.dijitButtonActive,
+.wsdk-dark .wsdk-manifest-editor-ui-container .feature-item-cancel-button.dijitButtonActive,
+.wsdk-dark .wsdk-manifest-editor-ui-container .privilege-item-cancel-button.dijitButtonActive,
+.wsdk-dark .wsdk-manifest-editor-ui-container .field-id > .dijitButton.dijitButtonActive {
+    background-position: -60px 0;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .feature-add-button.dijitButtonDisabled,
+.wsdk-dark .wsdk-manifest-editor-ui-container .privilege-add-button.dijitButtonDisabled,
+.wsdk-dark .wsdk-manifest-editor-ui-container .network-add-button.dijitButtonDisabled,
+.wsdk-dark .wsdk-manifest-editor-ui-container .control-add-button.dijitButtonDisabled,
+.wsdk-dark .wsdk-manifest-editor-ui-container .feature-item-remove-button.dijitButtonDisabled,
+.wsdk-dark .wsdk-manifest-editor-ui-container .privilege-item-remove-button.dijitButtonDisabled,
+.wsdk-dark .wsdk-manifest-editor-ui-container .feature-item-add-button.dijitButtonDisabled,
+.wsdk-dark .wsdk-manifest-editor-ui-container .privilege-item-add-button.dijitButtonDisabled,
+.wsdk-dark .wsdk-manifest-editor-ui-container .feature-item-cancel-button.dijitButtonDisabled,
+.wsdk-dark .wsdk-manifest-editor-ui-container .privilege-item-cancel-button.dijitButtonDisabled,
+.wsdk-dark .wsdk-manifest-editor-ui-container .field-id > .dijitButton.dijitButtonDisabled {
+    background-position: -40px 0;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .feature-add-button.dijitButtonDisabled .dijitButtonNode,
+.wsdk-dark .wsdk-manifest-editor-ui-container .privilege-add-button.dijitButtonDisabled .dijitButtonNode,
+.wsdk-dark .wsdk-manifest-editor-ui-container .network-add-button.dijitButtonDisabled .dijitButtonNode,
+.wsdk-dark .wsdk-manifest-editor-ui-container .control-add-button.dijitButtonDisabled .dijitButtonNode,
+.wsdk-dark .wsdk-manifest-editor-ui-container .feature-item-remove-button.dijitButtonDisabled  .dijitButtonNode,
+.wsdk-dark .wsdk-manifest-editor-ui-container .privilege-item-remove-button.dijitButtonDisabled  .dijitButtonNode,
+.wsdk-dark .wsdk-manifest-editor-ui-container .feature-item-add-button.dijitButtonDisabled .dijitButtonNode,
+.wsdk-dark .wsdk-manifest-editor-ui-container .privilege-item-add-button.dijitButtonDisabled .dijitButtonNode,
+.wsdk-dark .wsdk-manifest-editor-ui-container .feature-item-cancel-button.dijitButtonDisabled .dijitButtonNode,
+.wsdk-dark .wsdk-manifest-editor-ui-container .privilege-item-cancel-button.dijitButtonDisabled .dijitButtonNode,
+.wsdk-dark .wsdk-manifest-editor-ui-container .field-id > .dijitButton.dijitButtonDisabled .dijitButtonNode {
+    border: 0;
+    background: none;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .feature-item-add-button .dijitIcon,
+.wsdk-dark .wsdk-manifest-editor-ui-container .privilege-item-add-button .dijitIcon,
+.wsdk-dark .wsdk-manifest-editor-ui-container .feature-item-cancel-button .dijitIcon,
+.wsdk-dark .wsdk-manifest-editor-ui-container .privilege-item-cancel-button .dijitIcon {
+    border: 0;
+    background: none;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .feature-add-button .dijitButtonNode,
+.wsdk-dark .wsdk-manifest-editor-ui-container .privilege-add-button .dijitButtonNode,
+.wsdk-dark .wsdk-manifest-editor-ui-container .network-add-button .dijitButtonNode,
+.wsdk-dark .wsdk-manifest-editor-ui-container .control-add-button .dijitButtonNode,
+.wsdk-dark .wsdk-manifest-editor-ui-container .feature-item-remove-button .dijitButtonNode,
+.wsdk-dark .wsdk-manifest-editor-ui-container .privilege-item-remove-button .dijitButtonNode,
+.wsdk-dark .wsdk-manifest-editor-ui-container .feature-item-add-button .dijitButtonNode,
+.wsdk-dark .wsdk-manifest-editor-ui-container .privilege-item-add-button .dijitButtonNode,
+.wsdk-dark .wsdk-manifest-editor-ui-container .feature-item-cancel-button .dijitButtonNode,
+.wsdk-dark .wsdk-manifest-editor-ui-container .privilege-item-cancel-button .dijitButtonNode,
+.wsdk-dark .wsdk-manifest-editor-ui-container .field-id > .dijitButton .dijitButtonNode {
+    padding: 0!important;
+    border-radius: 0!important;
+    box-shadow: none!important;
+    background-color: transparent!important;
+    width: 20px;
+    height: 20px;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .feature-add-button .dijitButtonText,
+.wsdk-dark .wsdk-manifest-editor-ui-container .privilege-add-button .dijitButtonText,
+.wsdk-dark .wsdk-manifest-editor-ui-container .network-add-button .dijitButtonText,
+.wsdk-dark .wsdk-manifest-editor-ui-container .control-add-button .dijitButtonText,
+.wsdk-dark .wsdk-manifest-editor-ui-container .feature-item-remove-button .dijitButtonText,
+.wsdk-dark .wsdk-manifest-editor-ui-container .privilege-item-remove-button .dijitButtonNode,
+.wsdk-dark .wsdk-manifest-editor-ui-container .feature-item-add-button .dijitButtonText,
+.wsdk-dark .wsdk-manifest-editor-ui-container .privilege-item-add-button .dijitButtonText,
+.wsdk-dark .wsdk-manifest-editor-ui-container .feature-item-cancel-button .dijitButtonText,
+.wsdk-dark .wsdk-manifest-editor-ui-container .privilege-item-cancel-button .dijitButtonText,
+.wsdk-dark .wsdk-manifest-editor-ui-container .field-id > .dijitButton .dijitButtonText {
+    text-indent: -1000px!important;
+    overflow: hidden;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .feature-item-label,
+.wsdk-dark .wsdk-manifest-editor-ui-container .privilege-item-label {
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-feature-pane .ui-content-feature-content-pane-wrap,
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-privilege-pane .ui-content-privilege-content-pane-wrap {
+    border-bottom: 1px #000 solid;
+    border-left: 1px #000 solid;
+    border-right: 1px #000 solid;
+    padding: 1px 0 0 0;
+    background: #3d434b;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-feature-pane .ui-content-feature-content-pane-wrap .dgrid,
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-privilege-pane .ui-content-privilege-content-pane-wrap .dgrid {
+    height: 140px;
+    border: 0;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-feature-pane .ui-content-feature-content-pane-wrap .dgrid-selected,
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-privilege-pane .ui-content-privilege-content-pane-wrap .dgrid-selected {
+    background-color: transparent;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-feature-pane .ui-content-feature-content-pane-wrap .dgrid-cell,
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-privilege-pane .ui-content-privilege-content-pane-wrap .dgrid-cell {
+    padding: 4px 2px 4px 6px;
+    border: 0;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-feature-pane .ui-content-feature-content-pane-wrap .dgrid-cell .dijitContentPane,
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-privilege-pane .ui-content-privilege-content-pane-wrap .dgrid-cell .dijitContentPane {
+    padding: 0px 2px 0px 5px;
+    background-color: #778294;
+    border-radius: 6px;
+    border: 1px solid #778294;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-feature-pane .ui-content-feature-content-pane-wrap .dgrid-cell .dijitContentPane .dijitEditorIcon,
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-privilege-pane .ui-content-privilege-content-pane-wrap .dgrid-cell .dijitContentPane .dijitEditorIcon {
+    background-image: none;
+    width: 0;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-control-pane .ui-content-control-content-pane,
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-network-pane .ui-content-network-content-pane {
+    height: 155px;
+    padding: 0px;
+    background-color: #3d434b;
+    border-bottom: 1px #000 solid;
+    border-left: 1px #000 solid;
+    border-right: 1px #000 solid;
+    overflow: hidden;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-control-pane .ui-content-control-content-pane .dgrid,
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-network-pane .ui-content-network-content-pane .dgrid {
+    border: 0;
+    padding-top: 5px;
+    margin-left: 2px;
+    height: 100%;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-control-pane .ui-content-control-content-pane .dgrid-header,
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-network-pane .ui-content-network-content-pane .dgrid-header {
+    background-color: transparent!important;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-control-pane .ui-content-control-content-pane .dgrid-header-row .dgrid-cell,
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-network-pane .ui-content-network-content-pane .dgrid-header-row .dgrid-cell {
+    text-align: center;
+    background-color: #626c7e;
+    border: 1px #3d434b solid;
+    color:#212325;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-control-pane .ui-content-control-content-pane .dgrid-cell.field-id,
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-network-pane .ui-content-network-content-pane .dgrid-cell.field-id {
+    width: 42px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-control-pane .ui-content-control-content-pane .dgrid-cell.field-_subdomains,
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-network-pane .ui-content-network-content-pane .dgrid-cell.field-_subdomains {
+    width: 140px;
+    text-align: center;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-control-pane .ui-content-control-content-pane .dgrid-content .dgrid-cell,
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-network-pane .ui-content-network-content-pane .dgrid-content .dgrid-cell {
+    background-color: #778294;
+    padding: 5px 10px 5px 10px;
+    border-bottom: 1px #000 solid;
+    border-left: 1px #000 solid;
+    border-right: 1px #000 solid;
+    border-top: 0;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-control-pane .ui-content-control-content-pane .dgrid-content .dgrid-cell .dijitTextBox,
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-network-pane .ui-content-network-content-pane .dgrid-content .dgrid-cell .dijitTextBox {
+    width: 100%;
+    background-color: #292d37;
+    background-image: none;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .dgrid-content .dgrid-cell .dijitTextBox input {
+    color: #8e9398;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .dgrid-content .dgrid-cell .dijitTextBoxFocused .dijitInputContainer {
+    background: transparent;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-network-pane .ui-content-network-content-pane .dgrid-content .dgrid-cell .dijitToggleButton {
+    width: 34px;
+    height: 18px;
+    background-color: #212428;
+    border-radius: 10px;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-network-pane .ui-content-network-content-pane .dgrid-content .dgrid-cell .dijitToggleButton .dijitIcon {
+    background-image: none;
+    border-radius: 50%;
+    background-color: #737e8d;
+    width: 16px;
+    height: 16px;
+    margin-top: 1px;
+    margin-left: 1px;
+    display: block;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-network-pane .ui-content-network-content-pane .dgrid-content .dgrid-cell .dijitToggleButton.dijitToggleButtonChecked {
+    width: 34px;
+    height: 18px;
+    background-color: #212428;
+    border-radius: 10px;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-network-pane .ui-content-network-content-pane .dgrid-content .dgrid-cell .dijitToggleButton.dijitToggleButtonChecked .dijitIcon {
+    margin-top: 1px;
+    margin-left: 17px;
+    background-color: #0096ff;
+    display: block;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-network-pane .ui-content-network-content-pane .dgrid-content .dgrid-cell .dijitToggleButton .dijitButtonNode {
+    padding: 0!important;
+    border-radius: 0!important;
+    box-shadow: none!important;
+    background-color: transparent!important;
+    width: 34px;
+    height: 18px;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-network-pane .ui-content-network-content-pane .dgrid-content .dgrid-cell .dijitToggleButton .dijitButtonNode .dijitButtonContents{
+    height: 18px;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-network-pane .ui-content-network-content-pane .dgrid-content .dgrid-cell .dijitToggleButton .dijitButtonText {
+    text-indent: -1000px!important;
+    overflow: hidden;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-feature-pane .ui-content-feature-content-pane-widget,
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-privilege-pane .ui-content-privilege-content-pane-widget {
+    border: solid 1px;
+    left:0px;
+    right:0px;
+    top: 0px;
+    bottom: 0px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .error {
+    border-color: #d9534f;
+    border: 1px solid #d9534f !important;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .warn {
+    border-color: #f0ad4e;
+    border: 1px solid #f0ad4e !important;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .selected > span {
+    color: red !important;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icon-preview {
+    width: 48px;
+    height: 48px;
+    margin-top: 8px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .icon-pane {
+    width: 100px;
+    height: 118px;
+    border: 1px solid #2d3238;
+    background: #424651;
+    text-align: center;
+    margin-top: 8px;
+    position: absolute;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .name-preview {
+    margin-top: 2px;
+    display: inline-block;
+    width: 55px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color:#fff;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .icon-edit-button {
+    margin-top: 8px;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .icon-src-hide {
+    display: none;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-left {
+    float: left;
+    box-sizing: border-box;
+    padding-top: 0;
+    overflow: hidden;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-right {
+    float: right;
+    box-sizing: border-box;
+    padding: 0;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-both {
+    box-sizing: border-box;
+    left: 20px;
+    position: relative;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-both.advanced {
+    clear: both;
+    left:0;
+    padding:0;
+    overflow: hidden;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-both.appSetting > label {
+    width:70px;
+    text-align: left;
+    padding : 0 10px;
+    display: inline-block;
+    color: #c8cdd7;
+    position: absolute;
+    left: 0;
+    top: 8px;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-both.appSetting .appSetting-list {
+    height: 150px;
+    position: relative;
+    left: 100px;
+    width : calc(100% - 120px);
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-both.appSetting .appSetting-list > div {
+    background-color: #3c434b;
+    padding: 10px;
+    border: 1px #000 solid;
+    box-sizing: border-box;
+    color: #9da6b8;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-both.appSetting .appSetting-list > .orientation {
+    width: 50%;
+    height: 73px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-both.appSetting .appSetting-list > .orientation label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-both.appSetting .appSetting-list > .orientation .dijitButton,
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-both.appSetting .appSetting-list > .install-location .dijitButton {
+    margin: 20px 10px;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-both.appSetting .appSetting-list > .orientation .dijitButton.setting-orientation-auto,
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-both.appSetting .appSetting-list > .install-location .dijitButton.setting-install-location-auto {
+    margin: 20px 10px 20px 10px;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-both.appSetting .appSetting-list > .context-menu {
+    width: 50%;
+    height: 37px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    text-align: center;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-both.appSetting .appSetting-list > .bg-support {
+    width: 50%;
+    height: 37px;
+    position: absolute;
+    top: 36px;
+    left: 50%;
+    text-align: center;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-both.appSetting .appSetting-list > .install-location {
+    width: 50%;
+    height: 73px;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    text-align: center;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-both.appSetting .appSetting-list > .install-location label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-both.appSetting .appSetting-list > .encryption {
+    width: 50%;
+    height: 37px;
+    position: absolute;
+    top: 72px;
+    left: 50%;
+    text-align: center;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-both.appSetting .appSetting-list > .key-event {
+    width: 50%;
+    height: 37px;
+    position: absolute;
+    top: 108px;
+    left: 50%;
+    text-align: center;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-both.appSetting .appSetting-list > div label {
+    display: inline-block;
+    width:85px;
+    text-align: left;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-both.appSetting .appSetting-list > div .dijitToggleButton {
+    width: 34px;
+    height: 18px;
+    background-color: #212428;
+    border-radius: 10px;
+    margin-top: -1px;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-both.appSetting .appSetting-list > div .dijitToggleButton .dijitCheckBoxIcon {
+    background-image: none;
+    border-radius: 50%;
+    background-color: #737e8d;
+    width: 16px;
+    height: 16px;
+    margin-top: 1px;
+    margin-left: -9px;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-both.appSetting .appSetting-list > div .dijitToggleButton.dijitToggleButtonChecked {
+    width: 34px;
+    height: 18px;
+    background-color: #212428;
+    border-radius: 10px;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-both.appSetting .appSetting-list > div .dijitToggleButton.dijitToggleButtonChecked .dijitCheckBoxIcon {
+    margin-top: 1px;
+    margin-left: 6px;
+    background-color: #0096ff;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-both.appSetting .appSetting-list > div .dijitToggleButton .dijitButtonNode {
+    padding: 0!important;
+    border-radius: 0!important;
+    box-shadow: none!important;
+    background-color: transparent!important;
+    width: 14px;
+    height: 24px;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-both.appSetting .appSetting-list > div .dijitToggleButton .dijitButtonText {
+    text-indent: -1000px!important;
+    overflow: hidden;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-row .platform {
+    position: relative;
+    border: 1px #6D727B solid;
+    border-radius: 4px;
+    width: calc(100% - 121px);
+    box-sizing: border-box;
+    padding: 10px;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-row .platform legend{
+    color: #c8cdd7;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-row .platform label {
+    top: 25px;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-row .platform label ~ .dijitTextBox {
+    margin-left: 79px;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-row .platform label.fir ~ .dijitTextBox,
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-row .platform label.sec ~ .dijitTextBox {
+    width : calc(50% - 83px);
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-row .platform label.sec{
+    left: calc(50% + 7px);
+    width: 50px;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-row {
+    padding: 5px 2px;
+    position: relative;
+    left: 120px;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-row.w50 {
+    width : calc(50% - 180px);
+    float: left;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .wboth {
+    clear: both;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-row.w50 label ~ .dijitTextBox {
+    width : 40%;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-row .entry-point-button .dijitButtonNode {
+    padding: 1px 4px 1px 4px;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-both .ui-content-row label {
+    width:100px;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-both .ui-content-row {
+    padding-left: 110px;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-row label {
+    width:70px;
+    text-align: left;
+    padding : 0 10px;
+    display: inline-block;
+    color: #c8cdd7;
+    position: absolute;
+    left: 0;
+    top: 8px;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-row label.sec{
+    left: calc(50% - 50px);
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-row label.fir ~ .dijitTextBox,
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-row label.sec ~ .dijitTextBox {
+    width : calc(50% - 153px);
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-row.filecontent label ~ .dijitTextBox {
+    margin-left: 90px;
+    width : calc(100% - 240px);
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-row label ~ .dijitTextBox {
+    margin-left: 90px;
+    width : calc(100% - 210px);
+    background: #292d38;
+    border-color: #000;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-row label ~ .dijitTextBox.default {
+    border-color: #000;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-row label ~ .dijitTextBox.error,
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-row label ~ .dijitTextBox.dijitTextBoxFocused.error {
+    border-color: #d9534f;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-row label ~ .dijitTextBox.warn,
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-row label ~ .dijitTextBox.dijitTextBoxFocused.warn {
+    border-color: #f0ad4e;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-row label ~ .dijitTextBox.dijitTextBoxDisabled {
+    border: 1px solid #2f333a !important;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-row label ~ .dijitTextBox.dijitTextBoxDisabled .dijitInputField {
+    background: #404550;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-row label ~ .dijitTextBox.dijitTextBoxDisabled .dijitInputField > input {
+    color: #636b77;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-row label ~ .dijitTextBox .dijitInputField > input {
+    color: #7b8390;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-row label ~ .dijitTextBox.dijitTextBoxFocused {
+    background: #000;
+    border-color: #7f8897;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-row label ~ .dijitTextBox.dijitTextBoxFocused .dijitInputContainer {
+    background: transparent;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-row label ~ .dijitTextBox.dijitTextBoxFocused .dijitInputField > input {
+    color: #fff;
+    background: #292d38!important;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-row label ~ .dijitTextArea {
+    margin-left: 90px;
+    width : calc(100% - 208px);
+    color: #7b8390;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-row label ~ .dijitTextBox.dijitTextBoxFocused {
+    color: #fff;
+    background: #292d38!important;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .w50ps {
+    width: 50%;
+    float: left;
+    position: relative;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .w100ps {
+    width: 100%;
+    float: left;
+    position: relative;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .w100ps:after,
+.wsdk-dark .wsdk-manifest-editor-ui-container .w50ps:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .w20 {
+    width: 20%;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .advanced-button {
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .advanced-button.dijitToggleButtonChecked .dijitButtonNode {
+    background-color: #47a5ec;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .advanced-button .dijitEditorIcon {
+    background: none;
+    position: relative;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .advanced-button .dijitEditorIconCut:after {
+    content: '▼';
+    position: absolute;
+    top: 2px;
+    left: 0px;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .advanced-button .dijitEditorIconPaste:after {
+    content: '▲';
+    position: absolute;
+    top: 2px;
+    left: 0px;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .appSetting .dijitButton .dijitButtonNode {
+    padding: 0!important;
+    border-radius: 0!important;
+    box-shadow: none!important;
+    background-color: transparent!important;
+    width: 30px;
+    height: 30px;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .appSetting .dijitButton .dijitButtonText {
+    text-indent: -1000px;
+    overflow: hidden;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .appSetting .dijitButton {
+    width: 30px;
+    height: 30px;
+    background-image: url("resource/manifest-icon.png");
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .setting-orientation-auto {
+    background-position: 0px 50%;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .setting-orientation-auto.selected {
+    background-position: -30px 50%;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .setting-install-location-auto {
+    background-position: 0px 50%;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .setting-install-location-auto.selected {
+    background-position: -30px 50%;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .setting-orientation-portrait {
+    background-position: -60px 50%;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .setting-orientation-portrait.selected {
+    background-position: -90px 50%;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .setting-orientation-landscape {
+    background-position: -120px 50%;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .setting-orientation-landscape.selected {
+    background-position: -150px 50%;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .setting-install-location-internal {
+    background-position: -180px 50%;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .setting-install-location-internal.selected {
+    background-position: -211px 50%;
+}
+
+.wsdk-dark .wsdk-manifest-editor-ui-container .setting-install-location-external {
+    background-position: -240px 50%;
+}
+.wsdk-dark .wsdk-manifest-editor-ui-container .setting-install-location-external.selected {
+    background-position: -270px 50%;
+}
+.wsdk .dijitTabContainerTabListNested .dijitTab:first-child.dijitTabChecked {
+    background-color: #4f5561;
+    padding: 3px 8px;
+}
+.wsdk .dijitTabContainerTabListNested .dijitTab:last-child.dijitTabChecked {
+    padding: 3px 8px;
+}
+
+.wsdk-fileicon-manifest {
+    width: 16px;
+    height: 16px;
+    background: url('resource/fileicon_manifest.png') 0 0 no-repeat;
+}
+
+@media all and (max-width:1024px) {
+    .wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-pane .minlayout {
+        padding: 10px 20px;
+        min-width: 600px;
+        overflow: hidden;
+    }
+    .wsdk-dark .wsdk-manifest-editor-ui-container .w50ps {
+        width: 100%;
+        float: none;
+        position: relative;
+    }
+    .wsdk-dark .wsdk-manifest-editor-ui-container .appSetting {
+        left:110px
+    }
+    .wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-both.appSetting > label {
+        left: 10px;
+    }
+    .wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-both.appSetting .appSetting-list {
+        width: calc(100% - 208px);
+    }
+    .wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-feature-pane,
+    .wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-privilege-pane {
+        width: 100%;
+        float: none;
+    }
+    .wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-feature-pane {
+        padding: 0px;
+    }
+    .wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-privilege-pane {
+        padding: 0px;
+    }
+    .wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-control-pane,
+    .wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-network-pane {
+        padding: 0;
+        width: 100%;
+        float: none;
+    }
+    .wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-feature-pane .ui-content-feature-header-pane .feature-item-select-pane {
+        background-color: #323841;
+        padding: 4px 10px;
+        position: absolute;
+        top: 29px;
+        left: 1px;
+        width: calc(100% - 2px);
+        z-index: 10;
+    }
+    .wsdk-dark .wsdk-manifest-editor-ui-container .ui-content-privilege-pane .ui-content-privilege-header-pane .privilege-item-select-pane {
+        background-color: #323841;
+        padding: 4px 10px;
+        position: absolute;
+        top: 29px;
+        left: 1px;
+        width: calc(100% - 2px);
+        z-index: 10;
+    }
+}

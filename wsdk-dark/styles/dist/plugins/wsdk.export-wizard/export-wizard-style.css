@@ -1,0 +1,233 @@
+.wsdk-dark .wsdk-export-wizard-root {
+    width: 500px;
+}
+.wsdk-dark .wsdk-export-wizard-root .wizard-page {
+    height: 156px;
+    background-color: rgba(212,219,226,1);
+}
+.wsdk-dark .wsdk-export-wizard-root .wizard-page .notify {
+    padding: 10px;
+    border: 0;
+    height: initial;
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    border-bottom: 1px solid #b1bbc4;
+}
+.wsdk-dark .wsdk-export-wizard-root .project-type-list {
+    display: inline-flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.wsdk-dark .wsdk-export-wizard-root .project-type-list .project-type {
+    cursor: pointer;
+    border: 1px transparent solid;
+    border-collapse: collapse;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    width: 126px;
+    height: 100px;
+    vertical-align: bottom;
+    background: url("resource/tizen_prj.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    overflow: hidden;
+    padding: 0 10px;
+    line-height: 138px;
+    margin: 10px;
+    font-weight: bold;
+}
+.wsdk-dark .wsdk-export-wizard-root .project-type-list .project-type.select {
+    background-position: -127px 0px;
+}
+.type-select-page, .tizen-web-import-page {
+    min-width: 400px;
+    min-height: 200px;
+    overflow-x: auto;
+    background-color: rgba(212,219,226,1);
+}
+.wsdk-dark .wsdk-export-wizard-root .wsdk-common-wizard-root .indicator {
+    margin-top: 0;
+}
+.wsdk-dark .wsdk-export-wizard-root .wsdk-common-wizard-root .indicator div {
+    width: 178px;
+}
+.wsdk-dark .wsdk-export-wizard-root .wsdk-common-wizard-root .indicator .page{
+    position: relative;
+    background: transparent;
+}
+.wsdk-dark .wsdk-export-wizard-root .wsdk-common-wizard-root .indicator .page:nth-child(1){
+    z-index: 300;
+}
+.wsdk-dark .wsdk-export-wizard-root .wsdk-common-wizard-root .indicator .page:nth-child(1) span:before{
+    background: transparent;
+}
+.wsdk-dark .wsdk-export-wizard-root .wsdk-common-wizard-root .indicator .page:nth-child(2){
+    left:-25px;
+    z-index: 200;
+}
+.wsdk-dark .wsdk-export-wizard-root .wsdk-common-wizard-root .indicator .page:nth-child(3){
+    left:-51px;
+    z-index: 100;
+}
+.wsdk-dark .wsdk-export-wizard-root .wsdk-common-wizard-root .indicator .page span{
+    width: 150px;
+    height: 25px;
+    border-radius: 0;
+    background-color: rgba(132,148,170,1);
+    font-weight: bold;
+    font-size: 11px;
+    color: rgba(65,75,90,1);
+    text-decoration: none;
+    margin-right: 10px;
+    vertical-align: middle;
+    line-height: 27px;
+    display: block;
+}
+.wsdk-dark .wsdk-export-wizard-root .wsdk-common-wizard-root .indicator .page span:after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 132px;
+    top: 14px;
+    z-index: 1;
+    width: 17px;
+    height: 17px;
+    background-color: rgba(132,148,170,1);
+    transform: rotate(225deg) translateY(14px);
+}
+.wsdk-dark .wsdk-export-wizard-root .wsdk-common-wizard-root .indicator .page span:before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: -18px;
+    top: 14px;
+    z-index: 1;
+    width: 17px;
+    height: 17px;
+    background-color: rgba(237,242,249,1);
+    transform: rotate(225deg) translateY(14px);
+}
+.wsdk-dark .wsdk-export-wizard-root .wsdk-common-wizard-root .indicator .page.active span{
+    background-color: rgba(174,204,243,1);
+    color: rgba(0,0,0,1);
+}
+.wsdk-dark .wsdk-export-wizard-root .wsdk-common-wizard-root .indicator .page.active span:after{
+    background-color: rgba(174,204,243,1);
+    color: rgba(0,0,0,1);
+}
+
+
+.wsdk-dark .wsdk-common-wizard-root .button button {
+    margin-top: 10px;
+    border: 0;
+    color: #272a2d;
+    padding: 2px 4px 4px 4px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    background-color: rgba(147,167,195,1);
+    cursor: pointer;
+    margin-left: 5px;
+    box-shadow: none;
+}
+.wsdk-dark .wsdk-common-wizard-root .button button:hover {
+    background-color: rgba(162,183,212,1);
+    color: rgba(39,42,45,1);
+}
+.wsdk-dark .wsdk-common-wizard-root .button button:active {
+    background-color: rgba(66,76,91,1);
+    color: rgba(25,27,28,1);
+}
+.wsdk-dark .wsdk-common-wizard-root .button button:disabled {
+    background-color: rgba(147,167,195,1);
+    color: rgba(83,92,105,1);
+    cursor: default;
+    opacity: 0.5;
+}
+.wsdk-dark .wsdk-common-wizard-root .button .right {
+    float: right;
+}
+.wsdk-dark .wsdk-common-wizard-root .button .next {
+    position: relative;
+    width: 60px;
+    margin-right: 10px;
+}
+.wsdk-dark .wsdk-common-wizard-root .button .prev {
+    margin-left: 10px;
+    position: relative;
+    width: 60px;
+}
+.wsdk-dark .wsdk-common-wizard-root .button .finish {
+    width: 70px;
+}
+.wsdk-dark .wsdk-common-wizard-root .button .next:after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 43px;
+    top: 13px;
+    z-index: 1;
+    width: 14px;
+    height: 14px;
+    background-color: rgba(147,167,195,1);
+    transform: rotate(225deg) translateY(14px);
+}
+.wsdk-dark .wsdk-common-wizard-root .button .next:hover:after{
+    background-color: rgba(162,183,212,1);
+}
+.wsdk-dark .wsdk-common-wizard-root .button .next:disabled:after {
+    background-color: rgba(147,167,195,1);
+    cursor: default;
+}
+.wsdk-dark .wsdk-common-wizard-root .button .next:active:after {
+    background-color: rgba(66,76,91,1);
+}
+.wsdk-dark .wsdk-common-wizard-root .button .prev:after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: -17px;
+    top: 13px;
+    z-index: 1;
+    width: 16px;
+    height: 15px;
+    background-color: rgba(147,167,195,1);
+    transform: rotate(225deg) translateY(14px);
+}
+.wsdk-dark .wsdk-common-wizard-root .button .prev:hover:after{
+    background-color: rgba(162,183,212,1);
+}
+.wsdk-dark .wsdk-common-wizard-root .button .prev:disabled:after {
+    background-color: rgba(147,167,195,1);
+    cursor: default;
+}
+.wsdk-dark .wsdk-common-wizard-root .button .prev:active:after {
+    background-color: rgba(66,76,91,1);
+}
+.wsdk-dark .tizen-web-export-page .notify {
+    height: 30px;
+    border: 1px solid white;
+}
+.wsdk-dark .tizen-web-export-page .row {
+    padding-left: 126px;
+    text-align: center;
+    padding: 10px 0;
+}
+.wsdk-dark .tizen-web-export-page .row .label {
+    font-weight: bold;
+}
+.wsdk-dark .tizen-web-export-page .row .select{
+    width: 300px;
+    margin-left: 4px;
+    height: 22px;
+    border: 1px #7e8897 solid;
+    color: rgba(82,87,92,1);
+    background: rgba(230,233,237,1);
+    font-size: 12px;
+}

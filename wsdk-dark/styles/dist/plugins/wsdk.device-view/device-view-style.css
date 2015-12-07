@@ -1,0 +1,460 @@
+.wsdk-dark .wsdk-device-view {
+    width:100%;
+    height:100%;
+    background-color: #2e3138;
+}
+.wsdk-dark .wsdk-device-view .toolbar {
+    top: 0px;
+    color: #7e8c9f !important;
+    background-color: #373a43;
+    background-image: none!important;
+    border: 0!important;
+    padding: 0px 10px;
+    height: 28px;
+}
+.wsdk-dark .wsdk-device-view .toolbar .info {
+    margin-top: 4px;
+}
+.wsdk-dark .wsdk-device-view .toolbar .btn-refresh {
+    margin-top: 4px;
+}
+.wsdk-dark .wsdk-device-view .toolbar .info {
+    display: inline-block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    background-image: url('resource/icon_deviceview_info.png');
+    overflow: hidden;
+    text-indent: -1000px;
+}
+.wsdk-dark .wsdk-device-view .toolbar .btn-refresh .dijitButtonNode {
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: transparent;
+    overflow: hidden;
+}
+.wsdk-dark .wsdk-device-view .toolbar .btn-refresh .dijitButtonContents {
+    display: inline-block;
+    float: left;
+    margin: 0 0 0 5px;
+    width: 20px;
+    height: 20px;
+    background-image: url('resource/icon_deviceview_refresh.png');
+    overflow: hidden;
+    text-indent: -1000px;
+    cursor: pointer;
+}
+.wsdk-dark .wsdk-device-view .toolbar .btn-refresh.dijitButtonHover .dijitButtonContents,
+.wsdk-dark .wsdk-device-view .toolbar .btn-refresh.dijitButtonFocused .dijitButtonContents {
+    background-position: -20px 0;
+}
+.wsdk-dark .wsdk-device-view .toolbar .btn-refresh.dijitButtonActive .dijitButtonContents {
+    background-position: -40px 0;
+}
+.wsdk-dark .wsdk-device-view .target-content {
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    height: calc(100% - 30px);
+    overflow: hidden;
+    background-color: #efefef;
+}
+.wsdk-dark .wsdk-device-view .target-content:after {
+    display: block;
+    clear: both;
+    content: '';
+}
+.wsdk-dark .wsdk-device-view .target-content .target-list-content {
+    width: 200px;
+    padding: 8px 4px 4px 4px!important;
+    background-color: #2e3138;
+}
+.wsdk-dark .wsdk-device-view .target-content .target-list-content .dijitTitlePaneTitle {
+    color: #96c2fa;
+    background: #1c1d20;
+    border: 0;
+    padding: 6px 7px;
+    font-weight: bold;
+}
+.wsdk-dark .wsdk-device-view .target-content .target-list-content .dijitTitlePaneTitle .dijitTitlePaneTitleFocus {
+    padding: 0;
+    margin: 0;
+}
+.wsdk-dark .wsdk-device-view .target-content .target-list-content .device-list-pane {
+    height: calc(50% - 3px);
+}
+.wsdk-dark .wsdk-device-view .target-content .target-list-content .emulator-list-pane {
+    height: calc(50% - 3px);
+}
+.wsdk-dark .wsdk-device-view .target-content .target-list-content .device-list-pane .dijitTitlePaneContentOuter {
+    height: calc(100% - 31px);
+    border: 1px #1c1d20 solid;
+    background-color: #484c59;
+}
+.wsdk-dark .wsdk-device-view .target-content .target-list-content .emulator-list-pane .dijitTitlePaneContentOuter {
+    height: calc(100% - 31px);
+    border: 1px #1c1d20 solid;
+    background-color: #484c59;
+}
+.wsdk-dark .wsdk-device-view .target-content .target-list-content .dijitTitlePaneContentOuter .dijitTitlePaneContentInner {
+    padding: 1px;
+    box-sizing: border-box;
+}
+.wsdk-dark .wsdk-device-view .target-content .target-list-content .dijitTitlePaneContentOuter .dijitTitlePaneContentInner .target {
+    text-align: left;
+    color:#adb5c7;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    vertical-align: middle;
+    position: relative;
+    padding-left: 30px;
+}
+.wsdk-dark .wsdk-device-view .target-content .target-list-content .dijitTitlePaneContentOuter .dijitTitlePaneContentInner .target.mobile:before {
+    background-image: url('resource/device_mobile_16.png');
+    background-repeat: no-repeat;
+    background-position: 0px 50%;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    content: '';
+    position: absolute;
+    top:6px;
+    left:8px;
+}
+.wsdk-dark .wsdk-device-view .target-content .target-list-content .dijitTitlePaneContentOuter .dijitTitlePaneContentInner .target.wearable:before {
+    background-image: url('resource/device_wearable_16.png');
+    background-repeat: no-repeat;
+    background-position: 0px 50%;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    content: '';
+    position: absolute;
+    top:6px;
+    left:8px;
+}
+.wsdk-dark .wsdk-device-view .target-content .target-list-content .dijitTitlePaneContentOuter .dijitTitlePaneContentInner .target.tv:before {
+    background-image: url('resource/device_tv_16.png');
+    background-repeat: no-repeat;
+    background-position: 0px 50%;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    content: '';
+    position: absolute;
+    top:6px;
+    left:8px;
+}
+.wsdk-dark .wsdk-device-view .target-content .target-list-content .dijitTitlePaneContentOuter .dijitTitlePaneContentInner .target:hover,
+.wsdk-dark .wsdk-device-view .target-content .target-list-content .dijitTitlePaneContentOuter .dijitTitlePaneContentInner .target:active,
+.wsdk-dark .wsdk-device-view .target-content .target-list-content .dijitTitlePaneContentOuter .dijitTitlePaneContentInner .target.active{
+    color:#1c1d20;
+    background-color: #7695b6;
+}
+
+.wsdk-dark .wsdk-device-view .target-content .target-list-content .dijitTitlePaneContentOuter .dijitTitlePaneContentInner .target:hover:before,
+.wsdk-dark .wsdk-device-view .target-content .target-list-content .dijitTitlePaneContentOuter .dijitTitlePaneContentInner .target:active:before,
+.wsdk-dark .wsdk-device-view .target-content .target-list-content .dijitTitlePaneContentOuter .dijitTitlePaneContentInner .target.active:before{
+    background-position: -48px 50%;
+}
+
+.wsdk-dark .wsdk-device-view .target {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+}
+.wsdk-dark .wsdk-device-view .target-info-content {
+    padding: 4px!important;
+    background-color: #2e3138;
+}
+.wsdk-dark .wsdk-device-view .target-info-content .title {
+    font-weight: bold;
+    font-size: 12px;
+    color: #96c2fa;
+    display: block;
+    margin-bottom: 10px;
+}
+.wsdk-dark .wsdk-device-view .target-info-content .btn-group {
+    float:right
+}
+
+/*
+ * TODO: emulator management(start/terminate/delete)
+.wsdk-dark .wsdk-device-view .btn-start {
+    display: inline-block;
+    float: left;
+    margin: -5px 0 0 0;
+    width: 20px;
+    height: 20px;
+    background-image: url('icon_deviceview_run.png');
+    overflow: hidden;
+    text-indent: -1000px;
+    cursor: pointer;
+}
+.wsdk-dark .wsdk-device-view .btn-start.dijitButtonHover,
+.wsdk-dark .wsdk-device-view .btn-start.dijitButtonFocused {
+    background-position: -20px 0;
+}
+.wsdk-dark .wsdk-device-view .btn-start.dijitButtonActive {
+    background-position: -40px 0;
+}
+.wsdk-dark .wsdk-device-view .btn-terminate {
+    display: inline-block;
+    float: left;
+    margin: -5px 0 0 0;
+    width: 20px;
+    height: 20px;
+    background-image: url('icon_deviceview_stop.png');
+    overflow: hidden;
+    text-indent: -1000px;
+    cursor: pointer;
+}
+.wsdk-dark .wsdk-device-view .btn-terminate.dijitButtonHover,
+.wsdk-dark .wsdk-device-view .btn-terminate.dijitButtonFocused {
+    background-position: -20px 0;
+}
+.wsdk-dark .wsdk-device-view .btn-terminate.dijitButtonActive {
+    background-position: -40px 0;
+}
+
+.wsdk-dark .wsdk-device-view .btn-delete {
+    display: inline-block;
+    float: left;
+    margin: -5px 0 0 0;
+    width: 20px;
+    height: 20px;
+    background-image: url('icon_deviceview_delete.png');
+    overflow: hidden;
+    text-indent: -1000px;
+    cursor: pointer;
+}
+.wsdk-dark .wsdk-device-view .btn-delete.dijitButtonHover,
+.wsdk-dark .wsdk-device-view .btn-delete.dijitButtonFocused {
+    background-position: -20px 0;
+}
+.wsdk-dark .wsdk-device-view .btn-delete.dijitButtonActive {
+    background-position: -40px 0;
+}
+*/
+
+.wsdk-dark .wsdk-device-view .target-info-content > .dijitContentPane {
+    padding: 0;
+    height: calc(100% - 12px);
+}
+.wsdk-dark .wsdk-device-view .target-info-content .detail-information-box {
+    padding: 0;
+}
+.wsdk-dark .wsdk-device-view .target-info-content .detail-information {
+}
+.wsdk-dark .wsdk-device-view .target-info-content .detail-information table {
+    margin-top: 10px;
+    padding: 0;
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+}
+.wsdk-dark .wsdk-device-view .target-info-content .detail-information table th {
+    border-right: 1px #2e3138 solid;
+    border-left: 1px #2e3138 solid;
+    border-top: 1px #2e3138 solid;
+    padding: 6px;
+    background-color: #626c7e;
+    color: #212325;
+    font-weight: bold;
+}
+.wsdk-dark .wsdk-device-view .target-info-content .detail-information table tr:last-child th {
+    border-bottom: 1px #2e3138 solid;
+}
+.wsdk-dark .wsdk-device-view .target-info-content .detail-information table td {
+    border-right: 1px #2e3138 solid;
+    border-top: 1px #2e3138 solid;
+    padding: 6px;
+    background-color: #778294;
+    color: #ffffff;
+}
+.wsdk-dark .wsdk-device-view .target-info-content .detail-information table tr:last-child td {
+    border-bottom: 1px #2e3138 solid;
+}
+.wsdk-dark .wsdk-device-view .target-info-content .notibody{
+    display: table-cell;
+    vertical-align: middle;
+}
+.wsdk-dark .wsdk-device-view .target-info-content .notification {
+    position: relative;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 10px;
+    text-align: center;
+    display: table;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+.wsdk-dark .wsdk-device-view .target-info-content .notification ol {
+    margin-top: 30px;
+}
+.wsdk-dark .wsdk-device-view .target-info-content .notification li {
+    text-align: left;
+}
+.wsdk-dark .wsdk-device-view .target-info-content .notification li code {
+    font-size: 14px;
+    font-weight: bold;
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+}
+.wsdk-dark .wsdk-device-view .target-info-content .notification a:link,
+.wsdk-dark .wsdk-device-view .target-info-content .notification a:hover,
+.wsdk-dark .wsdk-device-view .target-info-content .notification a:visited {
+    color: #fff;
+}
+.wsdk-dark .wsdk-device-view hr {
+    border: #000 1px solid;
+    width: calc(100% - 16px);
+}
+.wsdk-dark .wsdk-device-view .dgrid {
+    border: 0;
+    height: initial!important;
+    min-height: initial;
+}
+.wsdk-dark .wsdk-device-view .dgrid .dgrid-scroller {
+    position: relative;
+    overflow-y: hidden;
+}
+.wsdk-dark .wsdk-device-view .dgrid .dgrid-header-scroll {
+    display: none;
+}
+.wsdk-dark .wsdk-device-view .dgrid .dgrid-header {
+    right: 0;
+}
+.wsdk-dark .wsdk-device-view .installed-application {
+    overflow: hidden;
+    height: 100%;
+}
+.wsdk-dark .wsdk-device-view .application-grid {
+    padding: 0;
+    height: 100%;
+}
+.wsdk-dark .wsdk-device-view .application-grid .dgrid-scroller {
+    overflow-x: hidden;
+}
+.wsdk-dark .wsdk-device-view .dgrid-header {
+    background-color: #626c7e!important;
+    right:6px;
+}
+.wsdk-dark .wsdk-device-view .dgrid-header .dgrid-cell {
+    color: #212325;
+    border: 1px solid #2e3138!important;
+    padding: 6px;
+    box-sizing: border-box;
+}
+.wsdk-dark .wsdk-device-view .dgrid-row .dgrid-cell {
+    color: #ffffff;
+    border: 1px solid #2e3138;
+    background-color: #778294;
+    padding: 6px;
+    box-sizing: border-box;
+}
+.wsdk-dark .wsdk-device-view .dgrid-header-scroll {
+    width: 0px;
+}
+.wsdk-dark .wsdk-device-view .application-grid .dijitButton {
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+}
+.wsdk-dark .wsdk-device-view .application-grid .dijitButtonNode {
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: transparent;
+    overflow: hidden;
+}
+.wsdk-dark .wsdk-device-view .application-grid .dijitButtonNode .dijitButtonText {
+    text-indent: -1000px;
+}
+
+/* action button in grid */
+.wsdk-dark .wsdk-device-view .application-grid .start .dijitButtonText {
+    display: inline-block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    background-image: url('resource/icon_deviceview_run.png');
+    overflow: hidden;
+    cursor: pointer;
+}
+.wsdk-dark .wsdk-device-view .application-grid .start.dijitButtonHover .dijitButtonText,
+.wsdk-dark .wsdk-device-view .application-grid .start.dijitButtonFocused .dijitButtonText {
+    background-position: -20px 0;
+}
+.wsdk-dark .wsdk-device-view .application-grid .start.dijitButtonActive .dijitButtonText {
+    background-position: -40px 0;
+}
+
+.wsdk-dark .wsdk-device-view .application-grid .terminate .dijitButtonText {
+    display: inline-block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    background-image: url('resource/icon_deviceview_stop.png');
+    overflow: hidden;
+    cursor: pointer;
+}
+.wsdk-dark .wsdk-device-view .application-grid .terminate.dijitButtonHover .dijitButtonText,
+.wsdk-dark .wsdk-device-view .application-grid .terminate.dijitButtonFocused .dijitButtonText {
+    background-position: -20px 0;
+}
+.wsdk-dark .wsdk-device-view .application-grid .terminate.dijitButtonActive .dijitButtonText {
+    background-position: -40px 0;
+}
+
+.wsdk-dark .wsdk-device-view .application-grid .uninstall .dijitButtonText {
+    display: inline-block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    background-image: url('resource/icon_deviceview_delete.png');
+    overflow: hidden;
+    cursor: pointer;
+}
+.wsdk-dark .wsdk-device-view .application-grid .uninstall.dijitButtonHover .dijitButtonText,
+.wsdk-dark .wsdk-device-view .application-grid .uninstall.dijitButtonFocused .dijitButtonText {
+    background-position: -20px 0;
+}
+.wsdk-dark .wsdk-device-view .application-grid .uninstall.dijitButtonActive .dijitButtonText {
+    background-position: -40px 0;
+}
+
+.wsdk-dark .wsdk-device-view .application-grid .dgrid-content {
+    height: auto;
+}
+.wsdk-dark .wsdk-device-view .application-grid .field-name {
+    width: 20%;
+}
+.wsdk-dark .wsdk-device-view .application-grid .field-packageId {
+    width: 25%;
+}
+.wsdk-dark .wsdk-device-view .application-grid .field-appId {
+    width: 25%;
+}
+.wsdk-dark .wsdk-device-view .application-grid .field-version {
+    width: 10%;
+}
+.wsdk-dark .wsdk-device-view .application-grid .field-packageType {
+    width: 10%;
+}
+.wsdk-dark .wsdk-device-view .application-grid .field-action {
+    width: 10%;
+}
+.wsdk-dark .wsdk-device-view .dijitSplitterV {
+    background-color: #2e3138;
+}

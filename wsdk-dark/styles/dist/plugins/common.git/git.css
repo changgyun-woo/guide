@@ -1,0 +1,119 @@
+/* git compare sytle */
+.wsdk-dark #GitHistoryDiffInfo .CodeMirror { font-family: 'Nanum Gothic Coding','Consolas','Bitstream Vera Sans Mono', monospace; font-size:12px }
+.wsdk-dark #GitCompareView .CodeMirror { font-family: 'Nanum Gothic Coding','Consolas','Bitstream Vera Sans Mono', monospace; font-size:12px }
+.wsdk-dark #GitBlame .note-gutter { width: 180px; }
+.wsdk-dark #GitBlame .CodeMirror-gutter-elt > div { white-space: nowrap; text-overflow: ellipsis; }
+.wsdk-dark #GitBlame .CodeMirror-gutter-elt > div:hover { text-decoration: underline; cursor: help; }
+.wsdk-dark #GitBlame .CodeMirror { font-family: 'Nanum Gothic Coding','Consolas','Bitstream Vera Sans Mono', monospace; font-size:12px; }
+
+/* git merge style */
+.wsdk-dark .CodeMirror-merge {
+    position: relative;
+    white-space: pre;
+}
+.wsdk-dark .CodeMirror-merge, .CodeMirror-merge .CodeMirror {
+    height: 350px;
+}
+.wsdk-dark .CodeMirror-merge-2pane .CodeMirror-merge-pane { width: 47%; }
+.wsdk-dark .CodeMirror-merge-2pane .CodeMirror-merge-gap { width: 6%; }
+.wsdk-dark .CodeMirror-merge-3pane .CodeMirror-merge-pane { width: 31%; }
+.wsdk-dark .CodeMirror-merge-3pane .CodeMirror-merge-gap { width: 3.5%; }
+.wsdk-dark .CodeMirror-merge-pane {
+    display: inline-block;
+    white-space: normal;
+    vertical-align: top;
+}
+.wsdk-dark .CodeMirror-merge-pane-rightmost {
+    position: absolute;
+    right: 0px;
+    z-index: 1;
+}
+.wsdk-dark .CodeMirror-merge-gap {
+    z-index: 2;
+    display: inline-block;
+    height: 100%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+.wsdk-dark .CodeMirror-merge-scrolllock-wrap {
+    position: absolute;
+    bottom: 0; left: 50%;
+}
+.wsdk-dark .CodeMirror-merge-scrolllock {
+    position: relative;
+    left: -50%;
+    cursor: pointer;
+    line-height: 1;
+}
+.wsdk-dark .CodeMirror-merge-copybuttons-left, .CodeMirror-merge-copybuttons-right {
+    position: absolute;
+    left: 0; top: 0;
+    right: 0; bottom: 0;
+    line-height: 1;
+}
+.wsdk-dark .CodeMirror-merge-copy {
+    position: absolute;
+    cursor: pointer;
+    display: none;
+}
+.wsdk-dark .CodeMirror-merge-copybuttons-left .CodeMirror-merge-copy { left: 2px; }
+.wsdk-dark .CodeMirror-merge-copybuttons-right .CodeMirror-merge-copy { right: 2px; }
+
+/*theme style*/
+
+.wsdk-dark .CodeMirror-merge {
+    border: 1px solid #ddd;
+}
+.wsdk-dark .CodeMirror-merge-gap {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    background: #f8f8f8;
+}
+.wsdk-dark .CodeMirror-merge-scrolllock {
+    color: #555;
+}
+.wsdk-dark .CodeMirror-merge-copy {
+    color: #44c;
+}
+.wsdk-dark .CodeMirror-merge-r-inserted, .CodeMirror-merge-l-inserted {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAGUlEQVQI12MwuCXy3+CWyH8GBgYGJgYkAABZbAQ9ELXurwAAAABJRU5ErkJggg==');
+    background-position: bottom left;
+    background-repeat: repeat-x;
+}
+
+.wsdk-dark .CodeMirror-merge-r-deleted, .CodeMirror-merge-l-deleted {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAGUlEQVQI12M4Kyb2/6yY2H8GBgYGJgYkAABURgPz6Ks7wQAAAABJRU5ErkJggg==');
+    background-position: bottom left;
+    background-repeat: repeat-x;
+}
+
+.wsdk-dark .CodeMirror-merge-r-chunk { background: #ffffe0; }
+.wsdk-dark .CodeMirror-merge-r-chunk-start { border-top: 1px solid #ee8; }
+.wsdk-dark .CodeMirror-merge-r-chunk-end { border-bottom: 1px solid #ee8; }
+.wsdk-dark .CodeMirror-merge-r-connect { fill: #ffffe0; stroke: #ee8; stroke-width: 1px; }
+
+.wsdk-dark .CodeMirror-merge-l-chunk { background: #eef; }
+.wsdk-dark .CodeMirror-merge-l-chunk-start { border-top: 1px solid #88e; }
+.wsdk-dark .CodeMirror-merge-l-chunk-end { border-bottom: 1px solid #88e; }
+.wsdk-dark .CodeMirror-merge-l-connect { fill: #eef; stroke: #88e; stroke-width: 1px; }
+
+.wsdk-dark .CodeMirror-merge-l-chunk.CodeMirror-merge-r-chunk { background: #dfd; }
+.wsdk-dark .CodeMirror-merge-l-chunk-start.CodeMirror-merge-r-chunk-start { border-top: 1px solid #4e4; }
+.wsdk-dark .CodeMirror-merge-l-chunk-end.CodeMirror-merge-r-chunk-end { border-bottom: 1px solid #4e4; }
+
+.wsdk-dark #GitHistoryTab {
+    padding: 0;
+    background-color: transparent;
+}
+.wsdk-dark #GitHistoryTab .dijitTabPaneWrapper {
+    border: 0;
+}
+.wsdk-dark #GitHistoryTab .dijitSplitterH,
+.wsdk-dark #GitHistoryTab .dijitSplitterV{
+    background-color: #EDF2F9!important;
+}
+.wsdk-dark .dijitDialogPaneContentArea .dijitTabPaneWrapper {
+    border: 0;
+}
