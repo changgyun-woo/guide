@@ -6370,7 +6370,6 @@ There are three areas of styling for the Menu:
   height: 18px;
   background-color: #212428;
   border-radius: 10px;
-  margin-top: -1px;
 }
 .wsdk-dark .toggle_switch .dijitCheckBoxIcon {
   background-image: none;

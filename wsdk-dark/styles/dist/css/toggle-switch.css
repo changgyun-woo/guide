@@ -1,0 +1,38 @@
+.toggle_switch {
+  width: 34px;
+  height: 18px;
+  background-color: #212428;
+  border-radius: 10px;
+}
+.toggle_switch .dijitCheckBoxIcon {
+  background-image: none;
+  border-radius: 50%;
+  background-color: #737e8d;
+  width: 16px;
+  height: 16px;
+  margin-top: 1px;
+  margin-left: 1px;
+}
+.toggle_switch .dijitButtonNode {
+  padding: 0!important;
+  border-radius: 0!important;
+  box-shadow: none!important;
+  background-color: transparent!important;
+  width: 14px;
+  height: 24px;
+}
+.toggle_switch .dijitButtonText {
+  text-indent: -1000px !important;
+  overflow: hidden;
+}
+.toggle_switch.dijitToggleButtonChecked {
+  width: 34px;
+  height: 18px;
+  background-color: #212428;
+  border-radius: 10px;
+}
+.toggle_switch.dijitToggleButtonChecked .dijitCheckBoxIcon {
+  margin-top: 1px;
+  margin-left: 17px;
+  background-color: #0096ff;
+}
